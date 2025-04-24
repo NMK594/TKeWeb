@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    .gallery-img {
+      width: 100%;
+      height: 250px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+  </style>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Image Gallery</h2>
+    <div class="row">
+  
+      <div class="col-12 col-md-4">
+        <img src="https://www.cleanipedia.com/images/5iwkm8ckyw6v/1FsMHQhRCWIum538yXREWV/e82bff585c9c029e8c5c928ca2e37624/ZHVuZy10dW9uZy1jb...0..webp" alt="Gallery 1" class="gallery-img">
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="https://file.hstatic.net/200000455999/file/y_nghia_hoa_hong__5__45050e42ec134de680e79ecabfe389ca_grande.png" alt="Gallery 2" class="gallery-img">
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="https://file.hstatic.net/200000455999/file/y_nghia_hoa_hong__6__ce209c7800144acca051ca29ad37051a_grande.png" alt="Gallery 3" class="gallery-img">
+      </div>
+  
+      <div class="col-12 col-md-4">
+        <img src="https://shophoavungtau.com/wp-content/uploads/2023/07/y-nghia-hoa-tulip.jpg" alt="Gallery 4" class="gallery-img">
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="https://shophoavungtau.com/wp-content/uploads/2023/08/cach-trong-hoa-tulip.jpg" alt="Gallery 5" class="gallery-img">
+      </div>
+      <div class="col-12 col-md-4">
+        <img src="https://www.cleanipedia.com/images/5iwkm8ckyw6v/4Uw48vc4QN8G0CegQN7jFi/cedfa0db9ea9b81ece9c8730bf03550b/YW5kcmV3LXNtYWxsL...t..avif" alt="Gallery 6" class="gallery-img">
+      </div>
+  
+    </div>
+  </div>
+  
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  
+  <div class="container mb-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form class="needs-validation" novalidate>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+  
+            <div class="form-group col-md-6">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+            <div class="invalid-feedback">Please enter your message.</div>
+          </div>
+  
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="container mb-5">
+    <div class="row text-center">
+      <!-- Basic Plan -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Basic</h5>
+            <p class="card-text">Ideal for individuals getting started.</p>
+            <h6 class="card-subtitle mb-3 text-muted">$9/month</h6>
+            <a href="#" class="btn btn-primary">Choose Plan</a>
+          </div>
+        </div>
+      </div>
+      <!-- Standard Plan -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Standard</h5>
+            <p class="card-text">Great for small teams and projects.</p>
+            <h6 class="card-subtitle mb-3 text-muted">$29/month</h6>
+            <a href="#" class="btn btn-success">Choose Plan</a>
+          </div>
+        </div>
+      </div>
+      <!-- Premium Plan -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Premium</h5>
+            <p class="card-text">Perfect for businesses and power users.</p>
+            <h6 class="card-subtitle mb-3 text-muted">$59/month</h6>
+            <a href="#" class="btn btn-danger">Choose Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+
+<script>
+    // Bootstrap 4 validation
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+  
+</body>
+</html>
