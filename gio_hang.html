@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Shopping Cart</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="gio_hang.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+    <div class="header">
+      <h1>Shopping Cart</h1>
+    </div>
+
+    <div class="cart-wrapper">
+      <div class="cart-items">
+        <div id="cartList">
+        </div>
+      </div>
+
+      <div class="cart-summary">
+        <div class="summary-header">
+          <h2>Order Summary</h2>
+          <div class="item-count" id="itemCount">0 courses</div>
+        </div>
+        <div class="summary-row total">
+          <span>Total:</span>
+          <span class="total-price" id="totalPrice">0₫</span>
+        </div>
+
+        <div style="margin-top: 25px;">
+          <a href="thanhtoan.html" id="checkoutButton" class="btn btn-primary">
+            Proceed to Checkout
+          </a>
+          <a href="trangchu.html" class="btn btn-secondary">
+            Keep Shopping 
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="recommendations" aria-label="You might also like">
+      <h3>You might also like</h3>
+      <div class="recommendations-list" tabindex="0" aria-live="polite" aria-relevant="additions">
+        <article class="recommendation-item" aria-label="The Complete Personal Development Course - 22… by Sandor Kiss, Prof. Paul Cline, Ed.D rating 4.5 stars price ₫339,000">
+          <img src="https://storage.googleapis.com/a1aa/image/c75f5fc0-d686-41be-bfd7-bcacb0af393a.jpg" alt="Black background with white brain and network lines illustration" width="220" height="130" />
+          <h4 class="recommendation-title">The Complete Personal Development Course - 22…</h4>
+          <p class="recommendation-subtitle">Sandor Kiss, Prof. Paul Cline, Ed.D</p>
+          <div class="recommendation-rating" aria-label="Rating 4.5 stars">
+            4.5
+            <span>(4,340)</span>
+          </div>
+          <div class="recommendation-prices">
+            <span>₫339,000</span>
+            <span class="recommendation-old-price">₫1,789,000</span>
+          </div>
+          <span class="recommendation-badge">Bestseller</span>
+        </article>
+        <article class="recommendation-item" aria-label="2025 Complete Public Speaking Masterclass For… by TJ Walker rating 4.4 stars price ₫309,000">
+          <img src="https://storage.googleapis.com/a1aa/image/d348320d-483d-4808-7806-20539b62d72b.jpg" alt="Woman presenting to a group of people in a classroom" width="220" height="130" />
+          <h4 class="recommendation-title">2025 Complete Public Speaking Masterclass For…</h4>
+          <p class="recommendation-subtitle">TJ Walker</p>
+          <div class="recommendation-rating" aria-label="Rating 4.4 stars">
+            4.4
+            <span>(9,673)</span>
+          </div>
+          <div class="recommendation-prices">
+            <span>₫309,000</span>
+            <span class="recommendation-old-price">₫1,359,000</span>
+          </div>
+          <span class="recommendation-badge">Bestseller</span>
+        </article>
+        <article class="recommendation-item" aria-label="Soft Skills: The 11 Essential Career Soft Skills by TJ Walker rating 4.4 stars price ₫339,000">
+          <img src="https://storage.googleapis.com/a1aa/image/fa277215-bf92-4a5d-36d2-cc602142c294.jpg" alt="Man drinking coffee and working on laptop in a home office" width="220" height="130" />
+          <h4 class="recommendation-title">Soft Skills: The 11 Essential Career Soft Skills</h4>
+          <p class="recommendation-subtitle">TJ Walker</p>
+          <div class="recommendation-rating" aria-label="Rating 4.4 stars">
+            4.4
+            <span>(8,213)</span>
+          </div>
+          <div class="recommendation-prices">
+            <span>₫339,000</span>
+            <span class="recommendation-old-price">₫1,509,000</span>
+          </div>
+          <span class="recommendation-badge">Bestseller</span>
+        </article>
+        <article class="recommendation-item" aria-label="How to Present Your Thoughts Smoothly, Clearly & Powerfully by Michael Williams rating 4.5 stars price ₫309,000">
+          <img src="https://storage.googleapis.com/a1aa/image/77c3780b-38ab-4079-44af-63a6bff1ad9c.jpg" alt="Man presenting to a group of people in a bright conference room" width="220" height="130" />
+          <h4 class="recommendation-title">How to Present Your Thoughts Smoothly, Clearly & Powerfully</h4>
+          <p class="recommendation-subtitle">Michael Williams</p>
+          <div class="recommendation-rating" aria-label="Rating 4.5 stars">
+            4.5
+            <span>(12,576)</span>
+          </div>
+          <div class="recommendation-prices">
+            <span>₫309,000</span>
+            <span class="recommendation-old-price">₫1,119,000</span>
+          </div>
+          <span class="recommendation-badge">Bestseller</span>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="gio_hang.js"></script>
+</body>
+</html>
