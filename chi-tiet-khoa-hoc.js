@@ -83,3 +83,42 @@ prevBtn.addEventListener('click', () => moveToIndex(index - 1));
 setInterval(() => {
   moveToIndex(index + 1);
 }, 4000);
+document.addEventListener('DOMContentLoaded', function () {
+  const addToCartBtn = document.querySelector('.add-to-cart');
+
+  addToCartBtn.addEventListener('click', function () {
+    // 1. Lấy tên sản phẩm
+    const productName = document.querySelector('#coures-name')?.innerText.trim() || 'Unknown';
+
+    // 2. Lấy ảnh sản phẩm
+    const productImage = document.querySelector('#vid-img img')?.src || '';
+
+    // 3. Lấy giá sản phẩm (giá đã giảm)
+    const productPriceText = document.querySelector('#price .xl-heading span')?.innerText || '0';
+    const price = parseInt(productPriceText.replace(/[^\d]/g, '')) || 0;
+
+    // 4. Đóng gói đối tượng sản phẩm
+    const item = {
+      name: productName,
+      price: price,
+      image: productImage
+    };
+
+    // 5. Lấy giỏ hàng từ localStorage
+    let cartList = JSON.parse(localStorage.getItem('cartList')) || [];
+
+    const exists = cartList.some(cartItem => cartItem.name === item.name);
+    if (exists) {
+      alert('You have already added this course to your cart.');
+      return;
+    }
+
+    // 6. Thêm sản phẩm và lưu lại
+    cartList.push(item);
+    localStorage.setItem('cartList', JSON.stringify(cartList));
+
+    if (confirm('The product has been successfully added to your cart! Would you like to view your cart now?')) {
+      window.location.href = 'gio_hang.html';
+    }
+  });
+});
