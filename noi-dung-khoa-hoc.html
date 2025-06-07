@@ -30,13 +30,12 @@
     />
     <link rel="stylesheet" href="chi-tiet-khoa-hoc.css" />
     <link rel="stylesheet" href="noi-dung-khoa-hoc.css" />
-    <link rel="stylesheet" href="/header/header.css">
-    <link rel="stylesheet" href="/footer/footer.css">
   </head>
   <body>
     <header id="header-guest" class="header">
       <div class="header-left">
-        <a href="#" class="logo">   <img src="/Trang chủ/images/Screenshot 2025-06-07 212313.png" alt="Logo">       </a>        <!--Explore dropdown-->
+        <a href="#" class="logo"> <img src="" alt="Logo" /> </a>
+        <!--Explore dropdown-->
         <div class="mega-menu-container">
           <a href="#" class="explore-link">Explore</a>
           <div class="mega-menu-content">
@@ -163,40 +162,37 @@
         </div>
       </div>
 
-      <div class="header-center">
-        <div class="search-bar">
-          <i class="fas fa-search search-icon"></i>
-          <input type="text" placeholder="Search for anything" />
+        <div class="header-center">
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search for anything">
+            </div>
         </div>
-      </div>
 
-      <div class="header-right">
-        <a href="#" class="business-link">Mindvestor Business</a>
-        <a href="#" class="teach-link">Teach on Mindvestor</a>
-        <a href="#" class="user-only">My learning</a>
-        <a href="gio_hang.html" class="cart-icon">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="cart-count">3</span>
-        </a>
-        <button class="btn btn-login guest-only">Log in</button>
-        <button class="btn btn-signup guest-only">Sign up</button>
-        <div class="profile-wrapper user-only">
-          <div class="avatar">
-            <img
-              src="https://i.pinimg.com/736x/10/f3/ea/10f3ea84eebd2c04b0513c96191cc34d.jpg"
-              alt="User Avatar"
-            />
-          </div>
-          <div class="profile-box">
-            <h4>Name</h4>
-            <p>email</p>
-            <hr />
-            <p><a href="#">Trang cá nhân</a></p>
-            <p><a href="#">Đăng xuất</a></p>
-          </div>
+         <div class="header-right">
+            <a href="error.html" class="business-link">Mindvestor Business</a>
+            <a href="error.html" class="teach-link">Teach on Mindvestor</a>
+            <a href="#" class="my-learning user-only">My learning</a>
+            <a href="gio_hang.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">3</span>
+            </a>
+            <a href="/DangNhapDK/Dangky.html" class="btn btn-login guest-only">Log in</a>
+            <a href="/DangNhapDK/Dangnhap1.html" class="btn btn-signup guest-only">Sign up</a>
+            <div class="profile-wrapper user-only">
+                <div class="avatar">
+                  <img src="https://i.pinimg.com/736x/10/f3/ea/10f3ea84eebd2c04b0513c96191cc34d.jpg" alt="User Avatar">
+                </div>
+                <div class="profile-box">
+                  <h4>Name</h4>
+                  <p>email</p>
+                  <hr>
+                  <p><a href="#">Trang cá nhân</a></p>
+                  <p><a href="#" onclick="handleLogout()">Đăng xuất</a></p>
+                </div>
+           </div>
         </div>
-      </div>
-    </header>
+</header>
     <div id="lecture-header">
       <div id="lec-head">
         <header>
@@ -645,7 +641,7 @@
       </aside>
     </div>
     <script src="noi-dung-khoa-hoc.js"></script>
-    <footer class=" footer  py-4">   
+    <footer class=" footer bg-white text-black  py-4">   
       <div class="container my-4 text-center">
           <h5 >Subscribe to Our Newsletter</h5>
           <form action="#" method="post">
@@ -707,82 +703,6 @@
       
   </div>
   </footer>
-    <!--Script cho header-->
-<script>
-  let lastScrollY = window.scrollY;
-  const header = document.querySelector(".header");
-  let scrollTimeout; // Biến để lưu trữ timeout
-
-  window.addEventListener("scroll", () => {
-    const currentScrollY = window.scrollY;
-
-    // Xóa timeout hiện có mỗi khi cuộn để reset bộ đếm ẩn header
-    clearTimeout(scrollTimeout);
-
-    if (currentScrollY < lastScrollY) {
-      // Kéo lên: Header luôn hiển thị ngay lập tức
-      header.style.top = "0";
-    } else {
-      // Kéo xuống: Header vẫn hiển thị trong khi đang cuộn
-      // Đặt timeout để ẩn header sau 2 giây nếu dừng cuộn
-      scrollTimeout = setTimeout(() => {
-        // Chỉ ẩn header nếu đã cuộn xuống đủ xa (ví dụ > 100px)
-        // và đang không ở vị trí đầu trang.
-        if (window.scrollY > 100) {
-          header.style.top = "-100px"; // Đảm bảo giá trị này đủ để ẩn hoàn toàn header
-        }
-      }, 2000); // 2000ms = 2 giây
-    }
-
-    lastScrollY = currentScrollY;
-  });
-
-  // Đảm bảo header hiển thị khi trang được tải lần đầu
-  window.addEventListener("load", () => {
-    header.style.top = "0";
-  });
-</script>
-<!--Megamenu-->
-
-  <!--Megamenu-->
-<script>
-  const megaContainer = document.querySelector(".mega-menu-container");
-
-  let hoverTimeout;
-
-  megaContainer.addEventListener("mouseenter", () => {
-    clearTimeout(hoverTimeout);
-    megaContainer.classList.add("active");
-  });
-
-  megaContainer.addEventListener("mouseleave", () => {
-    hoverTimeout = setTimeout(() => {
-      megaContainer.classList.remove("active");
-    }, 200); // 200ms để user rê chuột xuống không bị tắt ngay
-  });
-</script>
-
-<!--header đăng nhập-->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
-
-    document.querySelectorAll(".guest-only").forEach(el => {
-      el.style.display = isLoggedIn ? "none" : "inline-block";
-    });
-
-    document.querySelectorAll(".user-only").forEach(el => {
-      el.style.display = isLoggedIn ? "inline-block" : "none";
-    });
-  });
-</script>
-<!--Dang xuat-->
-<script>
-function handleLogout() {
-    localStorage.removeItem("isLoggedIn");
-    window.location.href = "trangchu.html"; // Reload lại trang chính với header cho khách
-  }
-</script>
   </body>
 </html>
 
