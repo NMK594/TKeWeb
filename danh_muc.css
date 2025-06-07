@@ -503,14 +503,14 @@ main {
 }
 
 .badge-bestseller {
-  background-color: #0b252a;
-  color: #fff;
+  background-color: #c2e9eb;
+  color: #1f453d;
   margin-top: auto;
 }
 
 .badge {
-  background-color: #0b252a;
-  color: white;
+  background-color: #c2e9eb;
+  color:#1f453d;
   font-weight: 600;
   padding: 4px 12px;
   border-radius: 0.375rem;
