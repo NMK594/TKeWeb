@@ -1,0 +1,413 @@
+ul {
+    list-style: none; /* Loại bỏ dấu chấm đầu dòng */
+    padding: 0; /* Loại bỏ khoảng cách padding */
+    margin: 0; /* Loại bỏ khoảng cách margin */
+}
+
+/* Thiết lập cơ bản cho khung hình ảnh*/
+.hero-picture  {
+    height: 600px; /* Đặt chiều cao cố định cho khung hiển thị */
+    overflow: hidden; /* Ẩn nội dung tràn ra ngoài khung */
+    position: relative; /* Cần thiết cho các phần tử con được định vị tương đối */
+    border-radius: 0.25rem; /* Tùy chọn: bo góc khung ngoài */
+    mask-image: linear-gradient(to bottom, transparent, black 5%, black 95%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 5%, black 95%, transparent); /* Hỗ trợ trình duyệt Webkit */
+}
+
+/* Container chứa tất cả các item sẽ cuộn */
+.slider-first {
+    display: flex;
+    flex-direction: column; /* Xếp các item theo chiều dọc */
+    animation: scroll-vertical 20s linear infinite; /* Áp dụng animation */
+   
+}
+.slider-second {
+    display: flex;
+    flex-direction: column; /* Xếp các item theo chiều dọc */
+    animation: scroll-vertical 20s linear infinite; /* Áp dụng animation */
+    animation-delay: -4s;
+}
+    
+/* Mỗi item trong cuộn */
+.slider > li {
+    flex-shrink: 0; /* Ngăn các item co lại */
+}
+
+.slider img {
+    width: 100%; /* Đảm bảo ảnh chiếm hết chiều rộng của item */
+    height: auto; /* Giữ tỷ lệ khung hình */
+    display: block; /* Loại bỏ khoảng trống dưới ảnh */
+    padding: 5px; /* Khoảng cách giữa ảnh và viền item */
+    border-radius: 10px; /* Bo góc ảnh */
+}
+
+/* Keyframes cho hiệu ứng cuộn dọc */
+@keyframes scroll-vertical {
+    0% {
+        transform: translateY(0); /* Bắt đầu ở vị trí ban đầu */
+    }
+    100% {
+        transform: translateY(-50%); /* Di chuyển lên hết chiều cao của .vertical-scroll-content */
+    }
+}
+
+/* Điều chỉnh tốc độ animation khi hover (tùy chọn) */
+.slider:hover {
+    animation-play-state: paused; /* Dừng cuộn khi di chuột vào */
+}
+
+/*Thiết lập cho Career ACcelerators*/
+/* ================================================================= */
+/* SECTION: Career Accelerators */
+/* ================================================================= */
+.Career-Accelerators {
+    padding: 60px 0; /* Khoảng cách trên và dưới cho section */
+    text-align: center; /* Căn giữa tiêu đề và đoạn văn bản */
+    background-color: #f8f9fa; /* Màu nền nhẹ cho section */
+}
+
+.Career-Accelerators h2 {
+    font-size: 2.5rem; /* Kích thước tiêu đề lớn */
+    font-weight: 700; /* Đậm hơn */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    color: #343a40; /* Màu chữ tiêu đề */
+}
+
+.Career-Accelerators p {
+    font-size: 1.15rem; /* Kích thước chữ đoạn văn bản */
+    color: #6c757d; /* Màu chữ đoạn văn bản */
+    max-width: 800px; /* Giới hạn chiều rộng của đoạn văn bản */
+    margin: 0 auto 40px auto; /* Căn giữa và tạo khoảng cách dưới */
+    line-height: 1.6; /* Chiều cao dòng */
+}
+
+/* CARD STYLES */
+.Career-Accelerators .card {
+    border: none; /* Bỏ border mặc định của card */
+    border-radius: 10px; /* Bo góc card */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08); /* Đổ bóng nhẹ cho card */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Hiệu ứng chuyển động mượt mà khi hover */
+    margin-bottom: 30px; /* Khoảng cách dưới mỗi card (quan trọng cho responsive) */
+    overflow: hidden; /* Đảm bảo ảnh bo góc theo card */
+    cursor: pointer;
+}
+
+.Career-Accelerators .card:hover {
+    transform: translateY(-5px); /* Nâng card lên nhẹ khi hover */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12); /* Đổ bóng rõ hơn khi hover */
+}
+
+.Career-Accelerators .card-img-top {
+    border-top-left-radius: 10px; /* Bo góc ảnh trên cùng theo card */
+    border-top-right-radius: 10px;
+    height: 200px; /* Chiều cao cố định cho ảnh */
+    object-fit: cover; /* Đảm bảo ảnh lấp đầy khung mà không bị méo */
+    width: 100%; /* Đảm bảo ảnh chiếm hết chiều rộng */
+}
+
+.Career-Accelerators .card-body {
+    padding: 25px; /* Padding bên trong card body */
+    text-align: left; /* Căn trái nội dung trong card */
+    min-height: 150px; 
+}
+
+.Career-Accelerators .card-title {
+    font-size: 18px; /* Kích thước tiêu đề card */
+    font-weight: 600; /* Đậm hơn */
+    margin: 10px; /* Khoảng cách dưới tiêu đề card */
+    color: #007bff; /* Màu xanh nổi bật (hoặc màu thương hiệu của bạn) */
+}
+
+.Career-Accelerators .card-text {
+    font-size: 14px; /* Kích thước chữ văn bản card */
+    color: #495057; /* Màu chữ văn bản card */
+    line-height: 1.5; /* Chiều cao dòng */
+    text-align: justify; /* Căn đều hai bên cho văn bản */
+    margin: 10px;
+}
+
+#btnSeeAll{
+    display: inline-block; /* Hiển thị dưới dạng khối nội tuyến */
+    width : 500px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 20px; /* Padding cho nút */
+    font-size: 1rem; /* Kích thước chữ nút */
+    color: #d73625; /* Màu chữ trắng */
+    border: 2px solid #d9751e; /* Viền nút */
+    cursor: pointer; /* Hiển thị con trỏ tay khi hover */
+    border-radius: 5px; /* Bo góc nút */
+    text-decoration: none; /* Bỏ gạch chân */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền khi hover */
+}
+
+.Career-Accelerators #btnSeeAll:hover {
+    background-color: #d9751e; /* Màu nền khi hover */
+    color: white; /* Màu chữ khi hover */
+}
+.card-infor{
+    display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
+    margin: 20px; /* Khoảng cách giữa các phần tử */
+    padding : 20px; /* Padding bên trong card */
+    align-items: center; /* Căn giữa theo chiều dọc */  
+}
+.Career-Accelerators .card-infor span{
+    font-size: 14px; /* Kích thước chữ cho span */
+    font-weight: 500; /* Độ đậm chữ cho span */
+    background-color: #ffffff; /* Màu nền cho span */
+    border-radius: 5px; /* Bo góc cho span */
+
+    color: #6c757d; /* Màu chữ cho span */
+    border : 1px solid #cfe6fa; /* Viền cho span */
+    padding: 5px 5px; /* Padding cho span */
+}
+
+/* Đối với màn hình nhỏ hơn 768px (col-md-4 sẽ xếp chồng) */
+@media (max-width: 767.98px) {
+    .Career-Accelerators h2 {
+        font-size: 2rem; /* Giảm kích thước tiêu đề trên màn hình nhỏ */
+    }
+
+    .Career-Accelerators p {
+        font-size: 1rem; /* Giảm kích thước đoạn văn bản trên màn hình nhỏ */
+    }
+}
+
+
+/* ================================================================= */
+/* SECTION: Career Accelerators End */
+/* ================================================================= */
+
+/* ================================================================= */
+/* SECTION: Skill nữa còn lâu mới foooter aaa bực cả mình */
+/* ================================================================= */
+.category-btn {
+  display: inline-flex;             /* cho icon và text nằm ngang */
+  align-items: center;              /* căn giữa theo chiều dọc */
+  padding: 0.5rem 1.25rem;          /* khoảng cách bên trong */
+  background-color: #ffffff;        /* màu nền button (xanh bootstrap) */
+  color: #000;                     /* màu chữ */
+  text-decoration: none;            /* bỏ gạch chân link */
+  border-radius: 0.375rem;  
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+border-radius: 5px;
+border : 1px solid #fe6b16;                  /* bỏ viền */
+}
+
+.category-btn i {
+  margin-right: 0.5rem;             /* khoảng cách icon và chữ */
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.category-btn:hover,
+.category-btn:focus {
+  background-color: #f6691e;        /* màu nền khi hover/focus */
+  color: #ffffff;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Optional: hiệu ứng khi click */
+.category-btn:active {
+  background-color: #ec3413;
+}
+
+.Skill h2{
+    font-size: 2.5rem; /* Kích thước tiêu đề lớn */
+    font-weight: 700; /* Đậm hơn */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    margin-top: 20px; /* Khoảng cách trên tiêu đề */
+    text-align: center; /* Căn giữa tiêu đề */
+    color: #000; /* Màu chữ tiêu đề */
+}
+
+/* What other say about us*/
+.what-other-say-about-us {
+    background-color: #f3a25b; /* Màu nền nhẹ cho section */
+    padding: 40px 0; /* Khoảng cách trên và dưới cho section */
+    text-align: left; /* Căn giữa nội dung */
+}
+.what-other-say-about-us .container
+{
+    display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
+    flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    padding: 20px; /* Khoảng cách bên trong container */
+}
+.what-other-say-about-us .card {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của container */
+    max-width: 600px; /* Giới hạn chiều rộng tối đa */
+    height: 250px !important;
+    margin: 10px 0; /* Khoảng cách trên và dưới */
+    padding: 10px; /* Padding bên trong card */
+    border-radius: 10px; /* Bo góc card */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho card */
+    background-color: #ffffff; /* Màu nền nhẹ cho card */
+}
+.author-info {
+    display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    }
+.author-info img {
+    width: 50px; /* Chiều rộng ảnh đại diện */
+    height: 50px; /* Chiều cao ảnh đại diện */
+    border-radius: 50%; /* Bo tròn ảnh đại diện */
+    margin-right: 15px; /* Khoảng cách bên phải cho ảnh đại diện */
+    margin-left: 15px; /* Khoảng cách bên trái cho ảnh đại diện */
+}
+.author-info .name {
+    font-weight: bold; /* Đậm tên tác giả */
+    color: #333; /* Màu chữ tên tác giả */
+    margin-top: 15px; /* Khoảng cách bên phải cho tên tác giả */
+    font-size: 15px; /* Kích thước chữ tên tác giả */
+}
+.author-info .position {
+    color: #777; /* Màu chữ vị trí tác giả */
+    font-size: 10px; /* Kích thước chữ vị trí tác giả */
+}
+.what-other-say-about-us .card-body {
+    font-size: 14px; /* Kích thước chữ cho nội dung */
+    color: #555; /* Màu chữ nội dung */
+    line-height: 1.5; /* Chiều cao dòng */
+    text-align: justify; /* Căn đều hai bên cho văn bản */
+    margin: 0px; /* Khoảng cách bên trong card body */
+    padding: 0 15px 5px 15px;
+}
+.what-other-say-about-us  .quote-icon {
+    
+    margin-bottom: 10px; /* Khoảng cách dưới cho trích dẫn */
+}
+.what-other-say-about-us .card:hover {
+    transform: translateY(-5px); /* Nâng card lên nhẹ khi hover */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12); /* Đổ bóng rõ hơn khi hover */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Hiệu ứng chuyển động mượt mà khi hover */
+    background-color: #f0f2f4;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3); /* Tùy chỉnh nền nút */
+  border-radius: 50%;
+}
+
+.carousel-control-prev {
+  left: -50px; /* Đẩy ra ngoài trái */
+}
+
+.carousel-control-next {
+  right: -50px; /* Đẩy ra ngoài phải */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 70% 70%; /* Thu nhỏ biểu tượng cho gọn */
+}
+
+.carousel-indicators{
+    position: absolute;
+    bottom: -20px; /* Đặt chỉ báo ở dưới cùng */
+    left: 45%; /* Căn giữa theo chiều ngang */
+
+    transform: translateX(-100%); /* Căn giữa hoàn toàn */
+    z-index: 15; /* Đảm bảo chỉ báo nằm trên cùng */ 
+} 
+
+/* ================================================================= */
+/* SECTION: Organization nữa còn lâu mới foooter aaa bực cả mình */
+/* ================================================================= */
+ .Mindvestor-for-organization {
+    padding: 40px 0; /* Khoảng cách trên và dưới cho section */
+    background-color: #f8f9fa; /* Màu nền nhẹ cho section */
+ }
+.Mindvestor-for-organization .container1 {
+    align-items: center; /* Căn giữa theo chiều ngang */
+    text-align: center; /* Căn giữa nội dung */
+    padding-bottom: 20px; /* Khoảng cách bên trong container */
+}
+ .Mindvestor-for-organization h2 {
+    font-size: 2.5rem; /* Kích thước tiêu đề lớn */
+    font-weight: 700; /* Đậm hơn */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    color: #343a40; /* Màu chữ tiêu đề */
+    }
+
+.Mindvestor-for-organization .btn{
+    display: inline-block ;/* Hiển thị dưới dạng khối nội tuyến */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 20px; /* Padding cho nút */
+    margin: 10px;
+    font-size: 1rem; /* Kích thước chữ nút */
+    color: #140200 !important; /* Màu chữ trắng */
+    border: 1px solid #8d857f; /* Viền nút */
+    cursor: pointer; /* Hiển thị con trỏ tay khi hover */
+    border-radius: 5px; /* Bo góc nút */
+    text-decoration: none; /* Bỏ gạch chân */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền khi hover */
+}
+.Mindvestor-for-organization .btn:hover {
+    margin-bottom: 5px;
+}
+.Mindvestor-for-organization .btn-pri{
+   background-color: #8d857f; /* Màu nền nút */
+    color: white !important; /* Màu chữ nút */
+}
+
+.Mindvestor-for-organization .container2 {
+    display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    position: relative;
+    gap: 40px;
+    padding: 30px;
+    align-items: center; 
+}
+
+.Mindvestor-for-organization .container2::before {
+    content: "";
+    position: absolute;
+      right: 0;
+    top: 70px; /* đẩy xuống một chút */
+    width: 100%; /* hoặc bạn thay bằng chiều rộng phù hợp */
+    height: 70%; /* nhỏ hơn ảnh */
+    background-color: #d35b1f; /* màu nền */
+    z-index: 0;
+}
+.Mindvestor-for-organization .left {
+      padding: 0;
+      display: flex;
+      justify-content: right;
+      position: relative;
+    z-index: 1; /* đẩy text lên trên lớp nền */
+    }
+.Mindvestor-for-organization .right {
+      padding: 20px;
+      width: 450px; /* Giới hạn chiều rộng của phần bên phải */
+      position: relative;
+    z-index: 1; /* đẩy text lên trên lớp nền */
+      justify-content: left;
+    }
+.Mindvestor-for-organization .container2 img{
+    width: 450px !important; /* Chiều rộng ảnh */
+    max-width: 600px; /* Giới hạn chiều rộng tối đa */
+    height: auto; /* Giữ tỷ lệ khung hình */
+    border-radius: 10px; /* Bo góc ảnh */
+    margin: 0 0 auto 30px; /* Căn giữa ảnh */
+
+}
+
+.Mindvestor-for-organization .container2 h4{
+    font-size:20px !important; /* Kích thước chữ tiêu đề */
+    font-weight: bold; /* Đậm hơn */
+    color: #140200; /* Màu chữ tiêu đề */
+}
+.Mindvestor-for-organization .container2 h3{
+    font-size:45px !important; /* Kích thước chữ tiêu đề */
+    font-weight: bold; /* Đậm hơn */
+    color: #ffffff; /* Màu chữ tiêu đề */
+}
+
+
