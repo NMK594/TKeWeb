@@ -27,8 +27,8 @@
 }
 
 /* Left Section */
-.header-left .logo img {
-    height: 34px; /* Adjust logo size */
+.header-left img {
+    height: 50px; /* Adjust logo size */
     margin-right: 15px;
 }
 
@@ -93,7 +93,7 @@
     position: absolute;
     top: -8px;
     right: -10px;
-    background-color: #5624d0;
+    background-color: hsl(186.98 100% 8.43%);
     color: #fff;
     font-size: 11px;
     border-radius: 50%;
@@ -118,40 +118,20 @@
 }
 
 .header .btn-login:hover {
-    background-color: #248dc2;
+    background-color: #e8f2f7;
+     
 }
 
 .header .btn-signup {
-    background-color: #5624d0;
+    background-color: hsl(188, 83%, 19%);
     color: #fff;
-    border-color: #5624d0;
     margin-right: 10px;
 }
 
 .header .btn-signup:hover {
-    background-color: #401b9c;
-    border-color: #401b9c;
+    background-color: hsl(186.98 100% 8.43%);
 }
 
-.btn-language {
-    background-color: #fff;
-    color: #1c1d1f;
-    font-size: 18px;
-    display: flex; /* To center the icon */
-    justify-content: center;
-    align-items: center;
-    width: 40px; /* Fixed width for the button */
-    height: 40px; /* Fixed height for the button */
-    padding: 0; /* Remove default padding */
-}
-
-.btn-language i {
-    font-size: 18px;
-}
-
-.btn-language:hover {
-    background-color: #f7f9fa;
-}
 
 .mega-menu-container {
   position: relative;
@@ -160,7 +140,6 @@
 
 .explore-link {
   padding: 10px 20px;
-  background: #f2e3f4;
   color: #0f0000;
   display: inline-block;
   text-decoration: none;
@@ -219,7 +198,7 @@
   display: block;
 }
 .header li:hover > a {
-  background-color: #f2e3f4;
+  background-color: hsl(187, 43%, 85%);
   color: #0f0000;
 }
 
@@ -243,6 +222,7 @@
 
 .mega-menu-column h4 {
   font-size: 1.1em;
+  font-weight: bold;
   color: #333;
   margin-top: 5px;
   margin-bottom: 5px;

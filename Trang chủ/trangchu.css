@@ -8,6 +8,130 @@ ul {
 }
 
 /* Thiết lập cơ bản cho khung hình ảnh*/
+.hero-section h1{
+  color: hsl(186.98 100% 8.43%);
+  font-weight: bold;
+  font-size: 45px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.hero-section p{
+  font-size: 16px;
+  
+}
+.hero-section h5{
+  color:rgba(243, 127, 11, 0.893);
+  font-weight: bold;
+}
+
+.btn-get-started {
+    background-color: rgba(243, 127, 11, 0.893); /* Màu cam nổi bật (Orange) */
+    color: white;
+    padding: 15px 35px; /* Tăng padding để nút lớn hơn */
+    border: none;
+    border-radius: 8px; /* Bo tròn góc nhẹ */
+    font-size: 1.1em; /* Kích thước chữ */
+    font-weight: 600;
+    text-decoration: none; /* Bỏ gạch chân cho link */
+    display: inline-block; /* Để button có thể xếp cạnh nhau nếu có nút khác */
+    margin-top: 30px; /* Khoảng cách từ nội dung phía trên */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hiệu ứng chuyển động mượt mà */
+    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.4); /* Thêm bóng nhẹ */
+}
+
+.btn-get-started:hover {
+    background-color: #FF8C00; /* Màu cam đậm hơn khi hover */
+    transform: translateY(-2px); /* Hiệu ứng hơi nhấc lên khi hover */
+}
+.benefits-section {
+    max-width: 900px;
+    margin: 60px auto; /* Khoảng cách trên dưới, căn giữa */
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+.benefits-section .section-title {
+    font-size: 2.2em;
+    color: rgba(243, 127, 11, 0.893);
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.benefits-list {
+    list-style: none; /* Bỏ dấu đầu dòng mặc định */
+    padding: 0;
+    margin: 0;
+    display: grid; /* Sử dụng Grid để sắp xếp các mục */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 2-3 cột trên desktop */
+    gap: 30px; /* Khoảng cách giữa các mục */
+}
+
+.benefits-list li {
+    display: flex; /* Sử dụng Flexbox cho từng mục */
+    align-items: flex-start; /* Căn icon và text trên cùng */
+    text-align: left; /* Căn lề trái nội dung text */
+    padding: 20px;
+    background-color: #fcfdff; /* Nền nhẹ cho từng item */
+    border-radius: 8px;
+    border: 1px solid #e0e6ed;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefits-list li:hover {
+    transform: translateY(-5px); /* Hiệu ứng nổi lên khi hover */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.benefits-list li i {
+    font-size: 2.5em; /* Kích thước icon */
+    color: hsl(186.98 100% 8.43%); /* Màu icon */
+    margin-right: 20px;
+    flex-shrink: 0; /* Đảm bảo icon không bị co lại */
+}
+.benefits-list li h4 {
+    font-size: 1.3em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.benefits-list li p {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive cho phần Benefits */
+@media (max-width: 768px) {
+    .benefits-section {
+        padding: 30px 15px;
+        margin: 40px auto;
+    }
+
+    .benefits-section .section-title {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+
+    .benefits-list {
+        grid-template-columns: 1fr; /* 1 cột trên mobile */
+    }
+
+    .benefits-list li {
+        flex-direction: column; /* Xếp icon và text chồng lên nhau */
+        align-items: center; /* Căn giữa nội dung */
+        text-align: center; /* Căn giữa text */
+    }
+
+    .benefits-list li i {
+        margin-right: 0;
+        margin-bottom: 15px; /* Khoảng cách giữa icon và text */
+    }
+}
+
 .hero-picture  {
     height: 600px; /* Đặt chiều cao cố định cho khung hiển thị */
     overflow: hidden; /* Ẩn nội dung tràn ra ngoài khung */
@@ -216,7 +340,9 @@ border : 1px solid #fe6b16;                  /* bỏ viền */
 .category-btn:active {
   background-color: #ec3413;
 }
-
+.Skill{
+  padding : 60px 20px;
+}
 .Skill h2{
     font-size: 2.5rem; /* Kích thước tiêu đề lớn */
     font-weight: 700; /* Đậm hơn */
@@ -228,8 +354,8 @@ border : 1px solid #fe6b16;                  /* bỏ viền */
 
 /* What other say about us*/
 .what-other-say-about-us {
-    background-color: #f3a25b; /* Màu nền nhẹ cho section */
-    padding: 40px 0; /* Khoảng cách trên và dưới cho section */
+    background-color: hsl(186.98 100% 8.43%); /* Màu nền nhẹ cho section */
+    padding: 60px 0; /* Khoảng cách trên và dưới cho section */
     text-align: left; /* Căn giữa nội dung */
 }
 .what-other-say-about-us .container
@@ -324,8 +450,8 @@ border : 1px solid #fe6b16;                  /* bỏ viền */
 /* SECTION: Organization nữa còn lâu mới foooter aaa bực cả mình */
 /* ================================================================= */
  .Mindvestor-for-organization {
-    padding: 40px 0; /* Khoảng cách trên và dưới cho section */
-    background-color: #f8f9fa; /* Màu nền nhẹ cho section */
+    padding: 60px 0; /* Khoảng cách trên và dưới cho section */
+    background-color: #ffffff; /* Màu nền nhẹ cho section */
  }
 .Mindvestor-for-organization .container1 {
     align-items: center; /* Căn giữa theo chiều ngang */
@@ -336,7 +462,7 @@ border : 1px solid #fe6b16;                  /* bỏ viền */
     font-size: 2.5rem; /* Kích thước tiêu đề lớn */
     font-weight: 700; /* Đậm hơn */
     margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
-    color: #343a40; /* Màu chữ tiêu đề */
+    color: hsl(186.98 100% 8.43%); /* Màu chữ tiêu đề */
     }
 
 .Mindvestor-for-organization .btn{
@@ -345,8 +471,6 @@ border : 1px solid #fe6b16;                  /* bỏ viền */
     padding: 10px 20px; /* Padding cho nút */
     margin: 10px;
     font-size: 1rem; /* Kích thước chữ nút */
-    color: #140200 !important; /* Màu chữ trắng */
-    border: 1px solid #8d857f; /* Viền nút */
     cursor: pointer; /* Hiển thị con trỏ tay khi hover */
     border-radius: 5px; /* Bo góc nút */
     text-decoration: none; /* Bỏ gạch chân */
@@ -356,9 +480,20 @@ border : 1px solid #fe6b16;                  /* bỏ viền */
     margin-bottom: 5px;
 }
 .Mindvestor-for-organization .btn-pri{
-   background-color: #8d857f; /* Màu nền nút */
-    color: white !important; /* Màu chữ nút */
+   background-color: #fa8805; /* Màu nền nút */
+    color: hsl(0, 0%, 100%) !important; /* Màu chữ nút */
 }
+.Mindvestor-for-organization .container2 .btn-sec{
+   background-color: hsl(186.98 100% 8.43%); /* Màu nền nút */
+    color: hsl(0, 0%, 100%) ; /* Màu chữ nút */
+    border-color: #fff;
+}
+.Mindvestor-for-organization .container1 .btn-sec{
+  background-color: #fff;
+  border-color: hsl(186.98 100% 8.43%);
+  color:hsl(186.98 100% 8.43%);
+}
+
 
 .Mindvestor-for-organization .container2 {
     display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
@@ -376,7 +511,7 @@ border : 1px solid #fe6b16;                  /* bỏ viền */
     top: 70px; /* đẩy xuống một chút */
     width: 100%; /* hoặc bạn thay bằng chiều rộng phù hợp */
     height: 70%; /* nhỏ hơn ảnh */
-    background-color: #d35b1f; /* màu nền */
+    background-color: hsl(186.98 100% 8.43%); /* màu nền */
     z-index: 0;
 }
 .Mindvestor-for-organization .left {
@@ -405,11 +540,15 @@ border : 1px solid #fe6b16;                  /* bỏ viền */
 .Mindvestor-for-organization .container2 h4{
     font-size:20px !important; /* Kích thước chữ tiêu đề */
     font-weight: bold; /* Đậm hơn */
-    color: #140200; /* Màu chữ tiêu đề */
+    color: #dcd3d2; /* Màu chữ tiêu đề */
 }
 .Mindvestor-for-organization .container2 h3{
     font-size:45px !important; /* Kích thước chữ tiêu đề */
     font-weight: bold; /* Đậm hơn */
+    color: #ffffff; /* Màu chữ tiêu đề */
+}
+.Mindvestor-for-organization .container2 p{
+    font-size:15px !important; /* Kích thước chữ tiêu đề */
     color: #ffffff; /* Màu chữ tiêu đề */
 }
 
