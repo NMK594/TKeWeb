@@ -100,7 +100,7 @@ body {
 .continue-email-btn {
     width: 100%;
     padding: 14px;
-    background-color: #722dff; /* Purple color from image */
+    background-color: hsl(186.98 100% 8.43%); /* Purple color from image */
     color: white;
     border: none;
     border-radius: 6px;
@@ -115,7 +115,7 @@ body {
 }
 
 .continue-email-btn:hover {
-    background-color: #6a25e0; /* Slightly darker purple on hover */
+    background-color: #574f64; /* Slightly darker purple on hover */
 }
 
 .or-divider {
@@ -176,7 +176,7 @@ body {
 }
 
 .signup-link .signup-btn {
-    color: #722dff;
+    color: hsl(187, 86%, 46%);
     text-decoration: none;
     font-weight: bold;
 }
@@ -190,7 +190,7 @@ body {
 }
 
 .org-login-btn {
-    color: #722dff;
+    color: hsl(187, 89%, 45%);
     text-decoration: none;
     font-weight: bold;
 }
@@ -258,7 +258,7 @@ img{
 
 
 .continue-email-btn:hover {
-  background-color: #0056b3;
+  background-color: hsl(187, 85%, 28%);
 }
 
 /* Đảm bảo input cho mã 6 chữ số có thể chấp nhận đúng định dạng */
