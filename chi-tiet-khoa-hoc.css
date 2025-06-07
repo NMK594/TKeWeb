@@ -769,3 +769,129 @@ a{
     font-weight: 700;
     margin-bottom: 1rem;
 }
+@media (max-width: 1024px) {
+    .sidebar {
+        position: relative !important;
+        margin-left: 0 !important;
+        width: 100%;
+    }
+
+    #sidebar-position {
+        padding: 0 1rem;
+    }
+
+    #page-content,
+    #main-content {
+        margin: 0 1rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #product-header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card-left,
+    .card-right {
+        width: 100%;
+        border-right: none;
+        padding: 1rem;
+    }
+
+    .review-container {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .carousel-track {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .cards {
+        flex: 0 0 80%;
+    }
+
+    #top-container {
+        padding: 1rem;
+    }
+
+    #page-body {
+        padding-top: 1rem;
+    }
+
+    #link-page {
+        margin: 0 1rem 1rem;
+    }
+
+    #breadcrumb {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .xl-heading {
+        font-size: 1.25rem;
+    }
+
+    .mid-heading {
+        font-size: 1rem;
+    }
+
+    .small-heading {
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .carousel-track {
+        gap: 0.5rem;
+    }
+
+    .cards {
+        flex: 0 0 90%;
+    }
+
+    .add-to-cart,
+    .buy {
+        font-size: 1rem;
+    }
+
+    #purchase-section {
+        padding: 1rem;
+    } }
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static !important;
+                margin: 2rem auto 0 auto !important;
+                width: 100%;
+                max-width: 100%;
+            }
+    
+            #sidebar-position {
+                order: 2;
+                /* Chuyển xuống dưới */
+                margin: 0 1rem;
+            }
+    
+            #page-body {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .video-intro {
+                display: block !important;
+            }
+    
+            .sidebar.sidebar-fixed {
+                position: static !important;
+                animation: none !important;
+                display: block !important;
+            }     }
