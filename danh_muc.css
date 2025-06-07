@@ -518,38 +518,6 @@ main {
   margin-bottom:1rem;
 }
 
-/* Navigation - edX style */
-nav {
-  display: flex;
-  gap: 2rem;
-  border-bottom: 2px solid #e9ecef;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #6c757d;
-}
-
-nav button {
-  background: none;
-  border: none;
-  padding: 1rem 0;
-  cursor: pointer;
-  color: #6c757d;
-  border-bottom: 3px solid transparent;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-nav button:hover {
-  color: #212529;
-}
-
-nav button.active {
-  color: #18794e;
-  border-bottom-color: #18794e;
-}
-
-
 /* Bottom Info - Clean layout */
 .bottom-info {
   border-top: 1px solid #dee2e6;
@@ -999,21 +967,21 @@ nav button.active {
   background-color: #f9f9f9;
   border-radius: 6px;
   text-decoration: none;
-  color:#18794e; 
-  border: 1px solid #18794e;
+  color:#0b252a 
+  border: 1px solid #0b252a
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .page-link:hover {
-  background-color: #18794e;
-  color: #fff;
+  background-color: #f9f9f9;
+  color: #1a1a1a;
 }
 
 .page-item.active .page-link {
-  background-color:#18794e;
+  background-color:#0b252a
   color: #fff;
-  border-color: #18794e;
+  border-color: #0b252a
   cursor: default;
 }
 
