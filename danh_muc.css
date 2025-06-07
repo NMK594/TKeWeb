@@ -967,8 +967,8 @@ main {
   background-color: #f9f9f9;
   border-radius: 6px;
   text-decoration: none;
-  color:#0b252a 
-  border: 1px solid #0b252a
+  color:#0b252a ;
+  border: 1px solid #0b252a;
   font-weight: 500;
   transition: all 0.3s ease;
 }
@@ -979,9 +979,9 @@ main {
 }
 
 .page-item.active .page-link {
-  background-color:#0b252a
+  background-color:#0b252a;
   color: #fff;
-  border-color: #0b252a
+  border-color: #0b252a;
   cursor: default;
 }
 
