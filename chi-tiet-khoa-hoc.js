@@ -122,3 +122,27 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("video-modal");
+  const btn = document.getElementById("play-video");
+  const closeBtn = document.querySelector(".close-btn");
+  const video = document.getElementById("preview-video");
+
+  btn.addEventListener("click", () => {
+    modal.style.display = "block";
+    video.currentTime = 0;
+    video.play();
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    video.pause();
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target == modal) {
+      modal.style.display = "none";
+      video.pause();
+    }
+  });
+});
