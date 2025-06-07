@@ -345,11 +345,14 @@ border : 1px solid #fe6b16;                  /* bỏ viền */
 }
 .Skill h2{
     font-size: 2.5rem; /* Kích thước tiêu đề lớn */
-    font-weight: 700; /* Đậm hơn */
-    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+    font-weight: 800; /* Đậm hơn */
+    margin-bottom: 40px; /* Khoảng cách dưới tiêu đề */
     margin-top: 20px; /* Khoảng cách trên tiêu đề */
     text-align: center; /* Căn giữa tiêu đề */
-    color: #000; /* Màu chữ tiêu đề */
+    color: hsl(186.98 100% 8.43%) /* Màu chữ tiêu đề */
+}
+.skill-list{
+  padding-top:40px;
 }
 
 /* What other say about us*/
