@@ -12,7 +12,7 @@ body {
 }
 
 h1, h4 {
-  color: #18794e;
+  color: #212529;
   margin-bottom: 20px;
 }
 
@@ -50,7 +50,7 @@ h1, h4 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #18794e;
+  color: #212529;
 }
 
 .item-count {
@@ -124,7 +124,7 @@ textarea {
   font-weight: 600;
   border: none;
   border-radius: 8px;
-  background-color: #18794e;
+  background-color:#212529;
   color: white;
   text-align: center;
   cursor: pointer;
