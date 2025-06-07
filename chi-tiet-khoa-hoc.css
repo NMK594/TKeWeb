@@ -516,6 +516,7 @@ a{
     overflow: hidden;
     box-sizing: border-box;
     margin-bottom: 1rem;
+    flex-direction: row;
 }
 /* Bên trái chiếm 1 phần */
 .card-left {
