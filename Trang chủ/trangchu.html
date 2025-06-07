@@ -10,16 +10,125 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="stylesheet" href="/header/header.css">
+    <link rel="stylesheet" href="/footer/footer.css">
     <link rel="stylesheet" href="trangchu.css">
 
 </head>
 <body>
+<header class="header">
+        <div class="header-left">
+            <a href="#" class="logo">   <img src="" alt="Logo">       </a>
+            <!--Explore dropdown-->
+           <div class="mega-menu-container">
+                <a href="#" class="explore-link">Explore</a>
+                <div class="mega-menu-content">
+                    <div class="mega-menu-column">
+                    <h4>Explore by Goal</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Learn AI <i class="fas fa-chevron-right"></i></a>
+                            <ul class="submenu submenu-level-2">
+                                <li><a href="#">AI Fundamentals</a></li>
+                                <li><a href="#">AI For Professionals</a></li>
+                                <li><a href="#">AI For Developers</a></li>
+                                <li><a href="#">AI For Creatives</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Launch a new career <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="#">Certification preparation <i class="fas fa-chevron-right"></i></a></li>
+                    </ul>
+
+                    <h4>Main Categories</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Development <i class="fas fa-chevron-right"></i></a>
+                            <ul class="submenu submenu-level-2">
+                                <li><a href="#">Web Development</a></li>
+                                <li><a href="#">Mobile Development</a></li>
+                                <li><a href="#">Game Development</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="has-submenu-level-3">Business <i class="fas fa-chevron-right"></i></a>
+                            <ul class="submenu submenu-level-2">
+                                <li><a href="danh_muc_khoa_hoc_Entrepreneurship">Entrepreneurship</a></li>
+                                <li><a href="danh_muc_khoa_hoc_Communication">Communication</a></li>
+                                <li><a href="management_course.html">Management</a></li>
+                                <li><a href="sales_courses.html">Sales</a></li>
+                                <li><a href="strategy_courses.html">Business Strategy</a></li>
+                                <li>
+                                    <a href="#" class="has-submenu-level-3">Operations <i class="fas fa-chevron-right"></i></a>
+                                    <ul class="submenu submenu-level-3">
+                                        <h4>Popular topics</h4>
+                                        <li><a href="#">Supply Chain</a></li>
+                                        <li><a href="#">Lean Six Sigma Green Belt Certification</a></li>
+                                        <li><a href="#">Logistics Management</a></li>
+                                        <li><a href="#">Lean Six Sigma Black Belt Certification</a></li>
+                                        <li><a href="#">Quality Management</a></li>
+                                        <li><a href="#">Virtual Assistant Skills</a></li>
+                                        <li><a href="#">Operations Management</a></li>
+                                        <li><a href="#">Certified Quality Engineer (CQE)</a></li>
+                                        <li><a href="#">Zapier</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Project Management</a></li>
+                                <li><a href="#">Business Law</a></li>
+                                <li><a href="#">Business Analytics & Intelligence</a></li>
+                                <li><a href="#">Human Resources</a></li>
+                                <li><a href="#">Industry</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Finance & Accounting <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="#">IT & Software <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="#">Office Productivity <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="#">Personal Development <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="#">Design <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a href="#">Marketing <i class="fas fa-chevron-right"></i></a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-center">
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search for anything">
+            </div>
+        </div>
+
+         <div class="header-right">
+            <a href="#" class="business-link">Mindvestor Business</a>
+            <a href="#" class="teach-link">Teach on Mindvestor</a>
+            <a href="#" class="my-learning user-only">My learning</a>
+            <a href="gio_hang.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">3</span>
+            </a>
+            <a href="/DangNhapDK/Dangky.html" class="btn btn-login guest-only">Log in</a>
+            <a href="/DangNhapDK/Dangnhap1.html" class="btn btn-signup guest-only">Sign up</a>
+            <div class="profile-wrapper user-only">
+                <div class="avatar">
+                  <img src="https://i.pinimg.com/736x/10/f3/ea/10f3ea84eebd2c04b0513c96191cc34d.jpg" alt="User Avatar">
+                </div>
+                <div class="profile-box">
+                  <h4>Name</h4>
+                  <p>email</p>
+                  <hr>
+                  <p><a href="#">Trang cá nhân</a></p>
+                  <p><a href="#" onclick="handleLogout()">Đăng xuất</a></p>
+                </div>
+           </div>
+        </div>
+</header>
+
+<main>
 <section class="hero-section ">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 mb-4 mb-lg-0">
-          <h1 class="display-3 fw-bold mb-4">LEARN FROM THE BEST, BE YOUR BEST.</h1>
+          <h1 class="display-3 fw-bold mb-4">IGNITE YOUR CURIOSITY. EXPAND YOUR HORIZON.</h1>
           <p class="lead mb-4">Get unlimited access to thousands of bite-sized lessons.</p>
           <h5 class="mb-3">What brings you to Mindvestor today?</h5>
             <div class="form-check mb-2">
@@ -31,7 +140,7 @@
             <div class="form-check mb-2">
               <input class="form-check-input" type="checkbox" value="" id="goal2">
               <label class="form-check-label" for="goal2">
-                  Become a better actor, musician, or writer
+                  Become a better manager, saler, or writer
               </label>
             </div>
             <div class="form-check mb-2">
@@ -128,28 +237,533 @@
     <div class="skill-list">
       <h2 class="fw-bold display-5 mb-4">A dose of inspiration,<br> whenever you need it.</h2>
       <div class="d-flex flex-wrap justify-content-center gap-3">
-        <a href="#" class="category-btn"><i class="bi bi-rocket-takeoff me-2"></i>Entrepreneurship</a>
-        <a href="#" class="category-btn"><i class="bi bi-chat-dots me-2"></i>Communication</a>
-        <a href="#" class="category-btn"><i class="bi bi-person-gear me-2"></i>Management</a>
-        <a href="#" class="category-btn"><i class="bi bi-cart3 me-2"></i>Sales</a>
-        <a href="#" class="category-btn"><i class="bi bi-diagram-3 me-2"></i>Business Strategy</a>
-        <a href="#" class="category-btn"><i class="bi bi-megaphone me-2"></i>Marketing</a>
-        <a href="#" class="category-btn"><i class="bi bi-alarm me-2"></i>Productivity</a>
-        <a href="#" class="category-btn"><i class="bi bi-award me-2"></i>Leadership</a>
-        <a href="#" class="category-btn"><i class="bi bi-lightbulb me-2"></i>Creativity</a>
-        <a href="#" class="category-btn"><i class="bi bi-cash-coin me-2"></i>Personal Finance</a>
-        <a href="#" class="category-btn"><i class="bi bi-gear-wide-connected me-2"></i>Operations</a>
+        <a href="#" class="category-btn" data-topic="entrepreneurship">
+          <i class="bi bi-rocket-takeoff me-2"></i>Entrepreneurship
+        </a>
+        <a href="#" class="category-btn" data-topic="communication">
+          <i class="bi bi-chat-dots me-2"></i>Communication
+        </a>
+        <a href="#" class="category-btn" data-topic="management">
+          <i class="bi bi-person-gear me-2"></i>Management
+        </a>
+        <a href="#" class="category-btn" data-topic="sales">
+          <i class="bi bi-cart3 me-2"></i>Sales
+        </a>
+        <a href="#" class="category-btn" data-topic="business-strategy">
+          <i class="bi bi-diagram-3 me-2"></i>Business Strategy
+        </a>
+        <a href="#" class="category-btn" data-topic="marketing">
+          <i class="bi bi-megaphone me-2"></i>Marketing
+        </a>
+        <a href="#" class="category-btn" data-topic="productivity">
+          <i class="bi bi-alarm me-2"></i>Productivity
+        </a>
+        <a href="#" class="category-btn" data-topic="leadership">
+          <i class="bi bi-award me-2"></i>Leadership
+        </a>
+        <a href="#" class="category-btn" data-topic="creativity">
+          <i class="bi bi-lightbulb me-2"></i>Creativity
+        </a>
+        <a href="#" class="category-btn" data-topic="personal-finance">
+          <i class="bi bi-cash-coin me-2"></i>Personal Finance
+        </a>
+        <a href="#" class="category-btn" data-topic="operations">
+          <i class="bi bi-gear-wide-connected me-2"></i>Operations
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="course-display" class="mt-4">
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="cards" data-topic="entrepreneurship">
+          <a href="">
+            <img
+              src="https://img-c.udemycdn.com/course/240x135/351090_5dfc_3.jpg"
+              alt=""
+              srcset="
+                https://img-c.udemycdn.com/course/240x135/351090_5dfc_3.jpg 1x,
+                https://img-c.udemycdn.com/course/480x270/351090_5dfc_3.jpg 2x
+              "
+            />
+            <div class="course-main-content">
+              <div class="course-title">
+                <h3 class="mid-heading">
+                  Charisma: You Can Develop Charisma
+                </h3>
+              </div>
+              <div class="course-cteator small-text">David Brown</div>
+              <div class="course-rating">
+                <span class="star-rating">
+                  <span class="small-heading star-number">4.7</span>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star-half-stroke icon"
+                      style="--fa: '\f5c0'"
+                    ></i>
+                  </div>
+                </span>
+                <span class="small-text rating-number">(1,576)</span>
+              </div>
+              <div class="course-detail small-text">
+                <span>3.5 total hours</span>
+                <span>*</span>
+                <span>18 lectures</span>
+                <span>*</span>
+                <span>All Levels</span>
+              </div>
+              <div class="course-price">
+                <div class="buy-box-price mid-heading">
+                  <span>₫400,000</span>
+                </div>
+                <div class="buy-box-price original-price normal-text">
+                  <s>₫1,700,000</s>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="cards" data-topic="communication">
+          <a href="">
+            <img
+              src="https://img-c.udemycdn.com/course/240x135/1802404_48e9_2.jpg"
+              alt=""
+              srcset="
+                https://img-c.udemycdn.com/course/240x135/1802404_48e9_2.jpg 1x,
+                https://img-c.udemycdn.com/course/480x270/1802404_48e9_2.jpg 2x
+              "
+            />
+            <div class="course-main-content">
+              <div class="course-title">
+                <h3 class="mid-heading">
+                  The Complete Career Coaching Course - Career
+                  Development
+                </h3>
+              </div>
+              <div class="course-cteator small-text">Mike Bertin</div>
+              <div class="course-rating">
+                <span class="star-rating">
+                  <span class="small-heading star-number">4.5</span>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star-half-stroke icon"
+                      style="--fa: '\f5c0'"
+                    ></i>
+                  </div>
+                </span>
+                <span class="small-text rating-number">(302)</span>
+              </div>
+              <div class="course-detail small-text">
+                <span>3 total hours</span>
+                <span>*</span>
+                <span>13 lectures</span>
+                <span>*</span>
+                <span>All Levels</span>
+              </div>
+              <div class="course-price">
+                <div class="buy-box-price mid-heading">
+                  <span>₫289,000</span>
+                </div>
+                <div class="buy-box-price original-price normal-text">
+                  <s>₫1,259,000</s>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="cards" data-topic="management">
+          <a href="">
+            <img
+              src="https://img-c.udemycdn.com/course/240x135/1854668_0473_4.jpg"
+              alt=""
+              srcset="
+                https://img-c.udemycdn.com/course/240x135/1854668_0473_4.jpg 1x,
+                https://img-c.udemycdn.com/course/480x270/1854668_0473_4.jpg 2x
+              "
+            />
+            <div class="course-main-content">
+              <div class="course-title">
+                <h3 class="mid-heading">
+                  The Complete Storytelling Course for Speaking &
+                  Presenting
+                </h3>
+              </div>
+              <div class="course-cteator small-text">James Smith</div>
+              <div class="course-rating">
+                <span class="star-rating">
+                  <span class="small-heading star-number">4.6</span>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star-half-stroke icon"
+                      style="--fa: '\f5c0'"
+                    ></i>
+                  </div>
+                </span>
+                <span class="small-text rating-number">(6,785)</span>
+              </div>
+              <div class="course-detail small-text">
+                <span>2.5 total hours</span>
+                <span>*</span>
+                <span>10 lectures</span>
+                <span>*</span>
+                <span>All Levels</span>
+              </div>
+              <div class="course-price">
+                <div class="buy-box-price mid-heading">
+                  <span>₫259,000</span>
+                </div>
+                <div class="buy-box-price original-price normal-text">
+                  <s>₫1,009,000</s>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="cards" data-topic="sales">
+          <a href="">
+            <img
+              src="https://img-c.udemycdn.com/course/240x135/363274_6346_4.jpg"
+              alt=""
+              srcset="
+                https://img-c.udemycdn.com/course/240x135/363274_6346_4.jpg 1x,
+                https://img-c.udemycdn.com/course/480x270/363274_6346_4.jpg 2x
+              "
+            />
+            <div class="course-main-content">
+              <div class="course-title">
+                <h3 class="mid-heading">
+                  Workplace Communication: You Can Speak Up at
+                  Meetings!
+                </h3>
+              </div>
+              <div class="course-cteator small-text">
+                Emma Johnson
+              </div>
+              <div class="course-rating">
+                <span class="star-rating">
+                  <span class="small-heading star-number">4.6</span>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star-half-stroke icon"
+                      style="--fa: '\f5c0'"
+                    ></i>
+                  </div>
+                </span>
+                <span class="small-text rating-number">(27,638)</span>
+              </div>
+              <div class="course-detail small-text">
+                <span>2 total hours</span>
+                <span>*</span>
+                <span>12 lectures</span>
+                <span>*</span>
+                <span>All Levels</span>
+              </div>
+              <div class="course-price">
+                <div class="buy-box-price mid-heading">
+                  <span>₫299,000</span>
+                </div>
+                <div class="buy-box-price original-price normal-text">
+                  <s>₫1,550,000</s>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="cards" data-topic="business-strategy">
+          <a href="">
+            <img
+              src="https://img-c.udemycdn.com/course/240x135/5135290_5d0e.jpg"
+              alt=""
+              srcset="
+                https://img-c.udemycdn.com/course/240x135/5135290_5d0e.jpg 1x,
+                https://img-c.udemycdn.com/course/480x270/5135290_5d0e.jpg 2x
+              "
+            />
+            <div class="course-main-content">
+              <div class="course-title">
+                <h3 class="mid-heading">
+                  How to deal with an upset customer - Great Customer
+                  Service
+                </h3>
+              </div>
+              <div class="course-cteator small-text">
+                Olivia Smith
+              </div>
+              <div class="course-rating">
+                <span class="star-rating">
+                  <span class="small-heading star-number">4.6</span>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star icon"
+                      style="--fa: '\f005'"
+                    ></i>
+                  </div>
+                  <div class="rating-icon">
+                    <i
+                      class="fa-solid fa-star-half-stroke icon"
+                      style="--fa: '\f5c0'"
+                    ></i>
+                  </div>
+                </span>
+                <span class="small-text rating-number">(838)</span>
+              </div>
+              <div class="course-detail small-text">
+                <span>2.5 total hours</span>
+                <span>*</span>
+                <span>15 lectures</span>
+                <span>*</span>
+                <span>All Levels</span>
+              </div>
+              <div class="course-price">
+                <div class="buy-box-price mid-heading">
+                  <span>₫299,000</span>
+                </div>
+                <div class="buy-box-price original-price normal-text">
+                  <s>₫1,399,000</s>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <a href="" class="cards" data-topic="management">
+  <article class="course-card" aria-label="Master the Product Manager Interview - The Complete Guide">
+    <img src="/image/management2.jpg" alt="Master the Product Manager Interview" />
+    <div class="course-info">
+      <h3 class="course-title">Master the Product Manager Interview - The Complete Guide</h3>
+      <p class="course-subtitle">Charles Du</p>
+      <p class="course-rating" aria-label="Rating 4.4 out of 5 stars with 2,472 reviews">
+        4.4
+        <span class="count">(2,472)</span>
+      </p>
+      <p class="price">₫349,000 <span class="old-price">₫469,000</span></p>
+      <span class="badge-bestseller">Bestseller</span>
+    </div>
+  </article>
+        </a>
+        <a href="error.html" class="cards" data-topic="sales">
+        <article class="course-card" aria-label="The Complete Presentation and Public Speaking/Speech Course">
+          <img src="/image/sales1.jpg" alt="Ted TalkTalk" />
+          <div class="course-info">
+            <h3 class="course-title">The Complete Sales Skills Master Class - Sales Marketing B2B </h3>
+            <p class="course-subtitle">TJ Walker, Bob Berkowitz, Media Training Worldwide…</p>
+            <p class="course-rating" aria-label="Rating 4.5 out of 5 stars with 19,309 reviews">
+              4.6
+              <span class="count">(61,764)</span>
+            </p>
+            <p class="price">₫519,000</p>
+          </div>
+        </article>
+        </a>
+        <a href="error.html" class="cards" data-topic="sales">
+        <article class="course-card" aria-label="Write Better Emails: Tactics for Smarter Team Communication">
+          <img src="/image/sales3.jpg" alt="Email" />
+          <div class="course-info">
+            <h3 class="course-title">Email Marketing with Dekker: Cold Email Marketing & More!</h3>
+            <p class="course-subtitle">Prof. Paul Cline, Ed.D, Sandor Kiss</p>
+            <p class="course-rating" aria-label="Rating 4.6 out of 5 stars with 87,371 reviews">
+              4.4
+              <span class="count">(2,472)</span>
+            </p>
+            <p class="price">₫399,000</p>
+          </div>
+        </article>
+        </a>
+        <a href="error.html" class="cards" data-topic="sales">
+        <article class="course-card" aria-label="Write Better Emails: Tactics for Smarter Team Communication">
+          <img src="/image/sales3.jpg" alt="Email" />
+          <div class="course-info">
+            <h3 class="course-title">Email Marketing for begginer</h3>
+            <p class="course-subtitle">Prof. Paul Cline, Ed.D, Sandor Kiss</p>
+            <p class="course-rating" aria-label="Rating 4.6 out of 5 stars with 87,371 reviews">
+              4.4
+              <span class="count">(2,472)</span>
+            </p>
+            <p class="price">₫399,000</p>
+          </div>
+        </article>
+        </a>
+        <a href="error.html" class="cards" data-topic="business-strategy">
+        <article class="course-card" aria-label="The Complete Presentation and Public Speaking/Speech Course">
+          <img src="/image/strategy6.jpg" alt="Ted TalkTalk" />
+          <div class="course-info">
+            <h3 class="course-title">Business Strategy: Understand What It Takes To Be Successful In Business </h3>
+            <p class="course-subtitle">Chris Haroun | 1.5 Million Students | #1 Best Selling…</p>
+            <p class="course-rating" aria-label="Rating 4.5 out of 5 stars with 19,309 reviews">
+              4.5
+              <span class="count">(19,309)</span>
+            </p>
+            <p class="course-price">₫1,639,000</p>
+            <span class="badge-bestseller">Bestseller</span>
+          </div>
+        </article>
+        </a>
+        <a href="" class="cards" data-topic="business-strategy">
+        <article class="course-card" aria-label="Write Better Emails: Tactics for Smarter Team Communication">
+          <img src="/image/strategy7.jpg" alt="Email" />
+          <div class="course-info">
+            <h3 class="course-title">CHANGE MANAGEMENT FOR ORGANIZATIONS: Drive Strategic Results</h3>
+            <p class="course-subtitle">Hassan Osman</p>
+            <p class="course-rating" aria-label="Rating 4.6 out of 5 stars with 87,371 reviews">
+              4.6
+              <span class="count">(87,371)</span>
+            </p>
+            <p class="course-price">₫409,000</p>
+            <span class="badge-bestseller">Bestseller</span>
+          </div>
+        </article>
+        </a>
+        
+
       </div>
     </div>
 
-    <div id="course-display" class="mt-4">
-
-    </div>
-    
+  
   </div>
 </section>
 
+<script>
+const categoryButtons = document.querySelectorAll('.category-btn');
+const courses = document.querySelectorAll('.cards');
 
+categoryButtons.forEach(button => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const selectedTopic = button.getAttribute('data-topic');
+
+
+    courses.forEach(course => {
+      const courseTopic = course.getAttribute('data-topic');
+      if (selectedTopic === courseTopic) {
+        course.style.display = 'block';
+      } else {
+        course.style.display = 'none';
+      }
+    });
+
+    categoryButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+  });
+});
+
+</script>
+
+<!--What they say i dont carecare-->
 <section class="what-other-say-about-us">
   <div class="container">
     <h2 class="fw-bold display-5 mb-4">See what others are achieving through learning</h2>
@@ -334,7 +948,6 @@
 
 </section>
 
-
 <section class="Mindvestor-for-organization">
     <div class="container1">
         <h2>Start your journey today.</h2>
@@ -360,55 +973,146 @@
   
 </section>
 
-<script>
-  const courseData = {
-    entrepreneurship: [
-      { title: "Startup Mastery", desc: "Learn how to start and grow a business." },
-      { title: "Pitching Ideas", desc: "Deliver compelling pitches to investors." }
-    ],
-    communication: [
-      { title: "Speak with Confidence", desc: "Improve your public speaking." },
-      { title: "Email Like a Pro", desc: "Master business email etiquette." }
-    ],
-    marketing: [
-      { title: "Digital Marketing", desc: "SEO, SEM, and social media." },
-      { title: "Brand Strategy", desc: "Build strong brand identity." }
-    ]
-  };
+</main>
 
-  const buttons = document.querySelectorAll('.category-btn');
-  const display = document.getElementById('course-display');
-
-  buttons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const category = btn.getAttribute('data-category');
-      const courses = courseData[category];
-
-      display.innerHTML = ''; // Xoá nội dung cũ
-
-      if (courses && courses.length > 0) {
-        courses.forEach(course => {
-          display.innerHTML += `
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title">${course.title}</h5>
-                  <p class="card-text">${course.desc}</p>
-                  <a href="#" class="btn btn-outline-primary">Xem chi tiết</a>
+ <footer class=" footer bg-white text-black  py-4">   
+        <div class="container my-4 text-center">
+            <h5 >Subscribe to Our Newsletter</h5>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
                 </div>
-              </div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+        <div class="container">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6 mb-4"> 
+                <h5 >About us</h5> 
+                <ul class="list-unstyled"> 
+                    <li><a href="#" class=" text-decoration-none">Our Story</a></li>
+                    <li><a href="#" class=" text-decoration-none">Our Team</a></li>
+                    <li><a href="#" class=" text-decoration-none">Careers</a></li>
+                    <li><a href="#" class=" text-decoration-none">Press</a></li>
+                    <li><a href="#" class="text-decoration-none">Blog</a></li>
+                </ul>
             </div>
-          `;
-        });
-      } else {
-        display.innerHTML = `<div class="col-12 text-center text-muted">Chưa có khóa học cho danh mục này.</div>`;
-      }
-    });
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="  text-decoration-none">Accessibility Statement</a></li>
+                    <li><a href="#" class="  text-decoration-none">Privacy Policy</a></li>
+                    <li><a href="#" class="  text-decoration-none">Terms of Service</a></li>
+                    <li><a href="#" class="  text-decoration-none">Cookie Policy</a></li>
+                    <li><a href="#" class="  text-decoration-none">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5 >Social</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="  text-decoration-none"><i class="fab fa-facebook-f me-2"></i>  Facebook</a></li> 
+                    <li class="mb-2"><a href="#" class="  text-decoration-none"><i class="fab fa-twitter me-2"></i> Twitter</a></li>
+                    <li class="mb-2"><a href="#" class="  text-decoration-none"><i class="fab fa-instagram me-2"></i> Instagram</a></li>
+                    <li class="mb-2"><a href="#" class="  text-decoration-none"><i class="fab fa-linkedin-in me-2"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5 >Mobile</h5>
+                <div class="d-flex flex-column gap-3">
+                        <a href="https://www.apple.com/app-store/" target="_blank" class="d-block mb-3">
+                            <img src="/footer/app_store.svg" alt="Tải trên App Store" class="img-fluid" style="width: 170px;">
+                        </a>
+                        <a href="https://play.google.com/store/games?hl=vi" target="_blank" class="d-block">
+                            <img src="/footer/google_play.svg" alt="Get it on Google Play" class="img-fluid" style="width: 170px;">
+                        </a>
+                </div>
+            </div>
+            
+    <div class="bottom container ">
+        <p>&copy; 2025 Mindvestor. All rights reserved.</p>
+        
+    </div>
+    </footer>
+
+
+
+<!--Script cho header-->
+<script>
+  let lastScrollY = window.scrollY;
+  const header = document.querySelector(".header");
+  let scrollTimeout; // Biến để lưu trữ timeout
+
+  window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+
+    // Xóa timeout hiện có mỗi khi cuộn để reset bộ đếm ẩn header
+    clearTimeout(scrollTimeout);
+
+    if (currentScrollY < lastScrollY) {
+      // Kéo lên: Header luôn hiển thị ngay lập tức
+      header.style.top = "0";
+    } else {
+      // Kéo xuống: Header vẫn hiển thị trong khi đang cuộn
+      // Đặt timeout để ẩn header sau 2 giây nếu dừng cuộn
+      scrollTimeout = setTimeout(() => {
+        // Chỉ ẩn header nếu đã cuộn xuống đủ xa (ví dụ > 100px)
+        // và đang không ở vị trí đầu trang.
+        if (window.scrollY > 100) {
+          header.style.top = "-100px"; // Đảm bảo giá trị này đủ để ẩn hoàn toàn header
+        }
+      }, 2000); // 2000ms = 2 giây
+    }
+
+    lastScrollY = currentScrollY;
+  });
+
+  // Đảm bảo header hiển thị khi trang được tải lần đầu
+  window.addEventListener("load", () => {
+    header.style.top = "0";
+  });
+</script>
+<!--Megamenu-->
+<script>
+  const megaContainer = document.querySelector(".mega-menu-container");
+
+  let hoverTimeout;
+
+  megaContainer.addEventListener("mouseenter", () => {
+    clearTimeout(hoverTimeout);
+    megaContainer.classList.add("active");
+  });
+
+  megaContainer.addEventListener("mouseleave", () => {
+    hoverTimeout = setTimeout(() => {
+      megaContainer.classList.remove("active");
+    }, 200); // 200ms để user rê chuột xuống không bị tắt ngay
   });
 </script>
 
+<!--header đăng nhập-->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 
+    document.querySelectorAll(".guest-only").forEach(el => {
+      el.style.display = isLoggedIn ? "none" : "inline-block";
+    });
 
+    document.querySelectorAll(".user-only").forEach(el => {
+      el.style.display = isLoggedIn ? "inline-block" : "none";
+    });
+  });
+</script>
+<!--Dang xuat-->
+<script>
+function handleLogout() {
+    localStorage.removeItem("isLoggedIn");
+    window.location.href = "trangchu.html"; // Reload lại trang chính với header cho khách
+  }
+</script>
 </body>
 </html>

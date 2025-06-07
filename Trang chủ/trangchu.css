@@ -1,3 +1,6 @@
+main{
+  padding-top: 60px;
+}
 ul {
     list-style: none; /* Loại bỏ dấu chấm đầu dòng */
     padding: 0; /* Loại bỏ khoảng cách padding */
@@ -410,4 +413,300 @@ border : 1px solid #fe6b16;                  /* bỏ viền */
     color: #ffffff; /* Màu chữ tiêu đề */
 }
 
+/*Khoa học chet tit*/
+.carousel-container{
+    margin-bottom: 2rem;
+    padding:10px;
+    display: flex;
+}
+#course-display {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  overflow-x: auto; /* cho phép cuộn ngang */
+  padding-bottom: 10px; /* khoảng cách chân */
+  -webkit-overflow-scrolling: touch; /* mượt trên iOS */
+}
+
+.carousel-track {
+  display: flex;
+  gap: 16px; /* khoảng cách giữa các cards */
+  scroll-behavior: smooth; /* cuộn mượt */
+}
+.cards {
+  width: 280px; /* độ rộng chuẩn cho card */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+.cards:hover {
+  box-shadow: 0 6px 16px rgb(0 0 0 / 0.15);
+}
+
+.cards a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+
+.cards img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.course-main-content {
+  padding: 12px 15px;
+}
+
+.course-title .mid-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 8px 0;
+  color: #222;
+  min-height: 56px; /* cố định chiều cao để các card đều nhau */
+  overflow: hidden;
+}
+
+.course-cteator.small-text {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.course-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.star-number {
+  font-weight: 600;
+  margin-right: 6px;
+  color: #f39c12; /* màu vàng cho điểm sao */
+}
+
+.rating-icon .icon {
+  color: #f39c12;
+  font-size: 14px;
+}
+
+.rating-number {
+  font-size: 0.8rem;
+  color: #777;
+  margin-left: 8px;
+}
+
+.course-detail {
+  font-size: 0.8rem;
+  color: #666;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.course-detail span {
+  display: inline-block;
+}
+
+.course-detail span:nth-child(2),
+.course-detail span:nth-child(4) {
+  color: #ccc;
+}
+
+.course-price {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.buy-box-price.mid-heading {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #e74c3c; /* đỏ nổi bật */
+}
+
+.buy-box-price.original-price normal-text {
+  font-size: 0.9rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* Responsive: nhỏ hơn 350px thu hẹp card */
+@media (max-width: 350px) {
+  .cards {
+    width: 100%;
+  }
+}
+
+
+.course-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.course-info {
+  padding: 12px 16px;
+}
+
+.course-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.3;
+  color: #222;
+}
+
+.course-subtitle {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.course-rating {
+  font-size: 0.9rem;
+  color: #f39c12; /* màu vàng cho rating */
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.course-rating .count {
+  font-size: 0.85rem;
+  color: #888;
+  margin-left: 6px;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #27ae60;
+  margin-bottom: 10px;
+}
+
+.old-price {
+  font-weight: 400;
+  color: #999;
+  margin-left: 8px;
+  text-decoration: line-through;
+  font-size: 0.9rem;
+}
+
+.badge-bestseller {
+  display: inline-block;
+  background-color: #e67e22;
+  color: #fff;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 12px;
+  user-select: none;
+  text-transform: uppercase;
+}
+.cards {
+    text-decoration: none; /* Bỏ gạch chân */
+    color: inherit; /* Giữ nguyên màu chữ */
+}
+
+
+@media (max-width: 991px) {
+    .Mindvestor-for-organization .container2 {
+        flex-direction: column; /* Chuyển sang bố cục cột */
+        text-align: center; /* Căn giữa nội dung trong container2 */
+    }
+
+    .Mindvestor-for-organization .container2 .left,
+    .Mindvestor-for-organization .container2 .right {
+        padding: 30px; /* Điều chỉnh padding */
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        flex: none; /* Bỏ flex để không ảnh hưởng đến chiều rộng */
+    }
+
+    .Mindvestor-for-organization .container2 .left img {
+        max-width: 80%; /* Giảm kích thước ảnh trên mobile */
+        margin: 0 auto; /* Căn giữa ảnh */
+    }
+
+    .Mindvestor-for-organization .container2 .right h3 {
+        font-size: 1.8em; /* Giảm cỡ chữ */
+    }
+
+    /* Điều chỉnh khoảng cách cho các nút trong container2 */
+    .Mindvestor-for-organization .container2 .right .btn {
+        margin: 10px; /* Đảm bảo khoảng cách */
+    }
+}
+
+/* Đối với màn hình nhỏ hơn 576px (ví dụ: điện thoại) */
+@media (max-width: 575px) {
+    .Mindvestor-for-organization {
+        padding: 40px 15px; /* Giảm padding tổng thể */
+    }
+
+    .Mindvestor-for-organization .container1 {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .Mindvestor-for-organization .container1 h2 {
+        font-size: 2em; /* Giảm cỡ chữ */
+    }
+
+    .Mindvestor-for-organization .container1 p {
+        font-size: 1em;
+    }
+
+    .Mindvestor-for-organization .container1 .btn {
+        display: block; /* Mỗi nút một dòng */
+        margin: 10px auto; /* Căn giữa nút */
+        width: 80%; /* Chiếm phần lớn chiều rộng */
+        max-width: 250px;
+    }
+
+    .Mindvestor-for-organization .container2 {
+        padding: 0; /* Bỏ padding ngoài cùng của container2 */
+        border-radius: 0; /* Bỏ bo tròn nếu muốn tràn cạnh màn hình */
+        box-shadow: none; /* Bỏ shadow nếu muốn tràn cạnh màn hình */
+    }
+
+    .Mindvestor-for-organization .container2 .left,
+    .Mindvestor-for-organization .container2 .right {
+        padding: 20px; /* Giảm padding cho nội dung */
+    }
+
+    .Mindvestor-for-organization .container2 .right h3 {
+        font-size: 1.6em;
+    }
+
+    .Mindvestor-for-organization .container2 .right p {
+        font-size: 0.9em;
+    }
+
+    .Mindvestor-for-organization .container2 .right .btn {
+        display: block; /* Mỗi nút một dòng */
+        margin: 10px auto; /* Căn giữa nút */
+        width: 90%;
+        max-width: 250px;
+    }
+}
 
