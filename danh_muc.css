@@ -122,10 +122,7 @@ h3 {
 }
 
 .subnav .active {
-  font-weight: 600;
-  color: #ffffff;
-  background-color: #18794e;
-  border-color: #18794e;
+  border-color: #0b252a;
 }
 
 .subnav .ellipsis {
@@ -232,7 +229,7 @@ main {
 
 .btn-add-all {
   margin-top: 1rem;
-  background-color: #18794e;
+  background-color: #0b252a;
   color: white;
   font-weight: 600;
   border-radius: 0.5rem;
@@ -506,13 +503,13 @@ main {
 }
 
 .badge-bestseller {
-  background-color: #18794e;
+  background-color: #0b252a;
   color: #fff;
   margin-top: auto;
 }
 
 .badge {
-  background-color: #18794e;
+  background-color: #0b252a;
   color: white;
   font-weight: 600;
   padding: 4px 12px;
