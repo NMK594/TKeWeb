@@ -21,7 +21,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #18794e;
+  color: #212529;
 }
 
 /* Bố cục chính */
@@ -119,9 +119,8 @@ body {
 }
 
 .btn-primary {
-  background-color: #18794e;
+  background-color: #212529;
   color: #fff;
-  border: 1px solid #18794e;
 }
 
 .btn-primary:hover {
@@ -129,13 +128,13 @@ body {
 }
 
 .btn-secondary {
-  background-color: #666;
-  color: #fff;
+  background-color: #f8f9fa;
+  color: #212529;
   border: 1px solid #666;
 }
 
 .btn-secondary:hover {
-  background-color: #444;
+  background-color: #ddd;
 }
 .cart-item .btn-remove {
   position: absolute;    
