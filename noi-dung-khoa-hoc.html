@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Layout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=release_alert"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=language"
+    />
+    <link rel="stylesheet" href="chi-tiet-khoa-hoc.css" />
+    <link rel="stylesheet" href="noi-dung-khoa-hoc.css" />
+  </head>
+  <body>
+    <div id="lecture-header">
+      <div id="lec-head">
+        <header>
+          <a href="dang-hoc.html"><h1 class="xl-heading">My Learning</h1></a>
+          <div id="divider"></div>
+          <div id="course-header">
+            <h1>Understand and Evaluate Digital Marketing Channels</h1>
+          </div>
+          <div class="buttonn">
+            <div class="rating-controls">
+              <button
+                type="button"
+                id="rating-button"
+                class="btn progress-button"
+              >
+                <i class="fa-solid fa-star"></i>
+                <span>Leave a rating</span>
+              </button>
+              <div id="rating-popup" class="hidden">
+                <div class="rating-popup-inner">
+                  <h3>How would you rate this course?</h3>
+                  <div id="stars">
+                    <i class="fa-star fa-regular"></i>
+                    <i class="fa-star fa-regular"></i>
+                    <i class="fa-star fa-regular"></i>
+                    <i class="fa-star fa-regular"></i>
+                    <i class="fa-star fa-regular"></i>
+                  </div>
+                  <textarea
+                    id="rating-comment"
+                    rows="3"
+                    placeholder="Leave a comment (optional)"
+                  ></textarea>
+                  <button id="save-rating">Save</button>
+                </div>
+              </div>
+              <div id="rating-thankyou" class="hidden">
+                Thanks for your rating!
+              </div>
+            </div>
+            <div class="progress-wrapper">
+              <button
+                type="button"
+                class="normal-text btn progress-button"
+                id="progress-button"
+              >
+                <div id="progress-ring">
+                  <svg width="36" height="36">
+                    <circle class="bg" r="15" cx="18" cy="18" />
+                    <circle class="progress" r="15" cx="18" cy="18" />
+                  </svg>
+                </div>
+                <span>Your progress</span>
+                <div class="small-icon">
+                  <i class="fa-solid fa-award icon" style="--fa: '\f078'"></i>
+                </div>
+              </button>
+              <div id="progress-popup"></div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+    <div class="content">
+      <div class="main-display">
+        <div id="vid-wrap">
+          <video id="mainVideo" controls width="100%">
+            <source src="" type="video/mp4" />
+            Your browser does not support video.
+          </video>
+        </div>
+        <div id="lectureText" class="hidden">
+          <div class="lecture-scroll">
+            <div
+              class="lecture-content"
+              data-id="lecture-1"
+              style="display: none"
+            >
+              <h2>Understanding and Evaluating Digital Marketing Channels</h2>
+              <p>
+                Digital marketing channels are platforms or methods that
+                marketers use to promote products or services online.
+                Understanding each channel helps you choose the right mix for
+                your campaign.
+              </p>
+
+              <h3>1. Types of Channels</h3>
+              <ul>
+                <li>
+                  <strong>Search Engine Marketing (SEM):</strong> Paid ads on
+                  search engines like Google.
+                </li>
+                <li>
+                  <strong>Search Engine Optimization (SEO):</strong> Organic
+                  strategies to rank higher on search results.
+                </li>
+                <li>
+                  <strong>Social Media Marketing:</strong> Promotion on
+                  platforms like Facebook, Instagram, LinkedIn.
+                </li>
+                <li>
+                  <strong>Email Marketing:</strong> Direct communication through
+                  email campaigns.
+                </li>
+                <li>
+                  <strong>Content Marketing:</strong> Providing value through
+                  blogs, videos, or guides.
+                </li>
+              </ul>
+
+              <h3>2. Evaluation Criteria</h3>
+              <ul>
+                <li>
+                  <strong>Reach:</strong> How many people can be reached through
+                  the channel?
+                </li>
+                <li>
+                  <strong>Cost:</strong> What is the budget needed to run
+                  campaigns effectively?
+                </li>
+                <li>
+                  <strong>Targeting:</strong> How accurately can you reach your
+                  desired audience?
+                </li>
+                <li>
+                  <strong>Conversion Rate:</strong> How well does the channel
+                  convert traffic to customers?
+                </li>
+                <li>
+                  <strong>Measurability:</strong> Can you track and analyze
+                  performance?
+                </li>
+              </ul>
+
+              <h3>3. Choosing the Right Mix</h3>
+              <p>
+                The ideal marketing mix depends on your business goals,
+                audience, and budget. A data-driven approach ensures that each
+                channel is contributing effectively to the overall strategy.
+              </p>
+
+              <p>
+                <em>Tip:</em> Start small, measure results, and scale the
+                channels that show the best ROI.
+              </p>
+            </div>
+            <div
+              class="lecture-content"
+              data-id="lecture-2"
+              style="display: none"
+            >
+              <h2>Digital Marketing Channels: Paid vs Organic</h2>
+              <p>
+                Digital marketing channels can generally be grouped into two
+                main categories: <strong>Paid</strong> and
+                <strong>Organic</strong>. Understanding the difference is key to
+                developing a balanced strategy.
+              </p>
+
+              <h3>1. Paid Channels</h3>
+              <ul>
+                <li>
+                  <strong>Pay-Per-Click (PPC):</strong> Advertisers pay each
+                  time their ad is clicked (e.g., Google Ads).
+                </li>
+                <li>
+                  <strong>Display Ads:</strong> Banner ads on websites, often
+                  through ad networks.
+                </li>
+                <li>
+                  <strong>Social Ads:</strong> Sponsored posts on platforms like
+                  Facebook, Instagram, or TikTok.
+                </li>
+              </ul>
+
+              <h3>2. Organic Channels</h3>
+              <ul>
+                <li>
+                  <strong>SEO:</strong> Getting traffic by optimizing site
+                  content and structure.
+                </li>
+                <li>
+                  <strong>Content Marketing:</strong> Blog posts, videos, and
+                  infographics that draw in users naturally.
+                </li>
+                <li>
+                  <strong>Social Media (non-paid):</strong> Building communities
+                  and engagement without paying for reach.
+                </li>
+              </ul>
+
+              <p>
+                A successful digital marketing strategy often combines both paid
+                and organic efforts. Paid channels bring quick traffic, while
+                organic channels build long-term value.
+              </p>
+            </div>
+            <div
+              class="lecture-content"
+              data-id="lecture-3"
+              style="display: none"
+            >
+              <h2>Tools to Evaluate Digital Marketing Channels</h2>
+              <p>
+                Measuring the performance of your digital marketing efforts is
+                crucial. A range of tools exist to help track and analyze how
+                well each channel performs.
+              </p>
+
+              <h3>1. Analytics Platforms</h3>
+              <ul>
+                <li>
+                  <strong>Google Analytics:</strong> Tracks website traffic,
+                  user behavior, and conversion rates.
+                </li>
+                <li>
+                  <strong>Meta Ads Manager:</strong> Monitors performance of
+                  Facebook/Instagram ad campaigns.
+                </li>
+                <li>
+                  <strong>Google Search Console:</strong> Measures SEO
+                  performance, index coverage, and search visibility.
+                </li>
+              </ul>
+
+              <h3>2. SEO Tools</h3>
+              <ul>
+                <li>
+                  <strong>Ahrefs / SEMrush / Moz:</strong> Analyze backlinks,
+                  keywords, and competitors.
+                </li>
+                <li>
+                  <strong>Yoast SEO:</strong> On-page SEO optimization tool for
+                  WordPress websites.
+                </li>
+              </ul>
+
+              <h3>3. Social Media Management</h3>
+              <ul>
+                <li>
+                  <strong>Hootsuite / Buffer:</strong> Schedule posts, track
+                  engagement, and manage multiple accounts.
+                </li>
+                <li>
+                  <strong>Sprout Social:</strong> Provides social listening and
+                  advanced analytics.
+                </li>
+              </ul>
+
+              <p>
+                Regularly reviewing metrics ensures you're investing in the
+                right channels and making informed adjustments to your strategy.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab">
+          <div class="note"><h2 class="xl-heading">Note</h2></div>
+          <div id="notes" class="hidden noteee">
+            <div class="note-content" data-id="note-1" style="display: none">
+              <p>
+                This lesson introduces the core objectives of the course,
+                explains the importance of understanding digital marketing
+                channels, and sets expectations for what learners will gain by
+                the end.
+              </p>
+            </div>
+            <div class="note-content" data-id="note-2" style="display: none">
+              <p>
+                Learn about key digital marketing channels such as email
+                marketing, display advertising, and SEO. Understand their
+                primary roles in customer engagement and lead generation.
+              </p>
+            </div>
+            <div class="note-content" data-id="note-3" style="display: none">
+              <p>
+                Explore additional digital channels including paid search,
+                content marketing, and social media. Focus on how each channel
+                contributes to brand visibility and conversions.
+              </p>
+            </div>
+            <div class="note-content" data-id="note-4" style="display: none">
+              <p>
+                Introduction to tools that support digital marketing channels,
+                such as content management systems (CMS), email automation
+                platforms, and social media schedulers.
+              </p>
+            </div>
+            <div class="note-content" data-id="note-5" style="display: none">
+              <p>
+                Dive into advanced tools for performance tracking and customer
+                data analysis, including Google Analytics, CRM systems, and
+                digital ad platforms.
+              </p>
+            </div>
+            <div class="note-content" data-id="note-6" style="display: none">
+              <p>
+                Understand the types of outputs each channel produces (e.g.,
+                clicks, views, sign-ups), and how to interpret these results to
+                assess performance.
+              </p>
+            </div>
+            <div class="note-content" data-id="note-7" style="display: none">
+              <p>
+                Learn how to compare and evaluate different digital channels
+                based on KPIs like ROI, engagement, and conversion rate to make
+                informed marketing decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="course-content">
+        <div id="course-content-header">
+          <h3 class="mid-heading">Course content</h3>
+        </div>
+
+        <div class="section">
+          <ul>
+            <li
+              data-type="video"
+              class="lectures"
+              data-note="note-1"
+              data-src="https://media.istockphoto.com/id/1556389414/vi/video/ng%C6%B0%E1%BB%9Di-%C4%91%C3%A0n-%C3%B4ng-s%E1%BB%AD-d%E1%BB%A5ng-m%C3%A1y-t%C3%ADnh-x%C3%A1ch-tay-ti%E1%BA%BFp-x%C3%BAc-k%C3%A9p-v%E1%BB%9Bi-b%E1%BA%A3ng-%C4%91i%E1%BB%81u-khi%E1%BB%83n-ph%C3%A2n-t%C3%ADch-d%E1%BB%AF-li%E1%BB%87u.mp4?s=mp4-640x640-is&amp;k=20&amp;c=qDs2fVsJRsDvBFETX96F3yIW6Qf9zQ4wrTGerADSIJw="
+            >
+              <div class="list-item">
+                <div class="checkk">
+                  <i class="fa-regular fa-square-check"></i>
+                </div>
+                <div class="list-item-content">
+                  <div class="normal-text">1. Introduction</div>
+                  <div class="small-text">24min</div>
+                </div>
+              </div>
+            </li>
+            <li
+              data-type="lecture"
+              data-src="lecture-1"
+              class="lectures"
+              data-note="note-2"
+            >
+              <div class="list-item">
+                <div class="checkk">
+                  <i class="fa-regular fa-square-check"></i>
+                </div>
+                <div class="list-item-content">
+                  <div class="normal-text">
+                    2. Understand Available DM Channels - Part 1
+                  </div>
+                  <div class="small-text">5min</div>
+                </div>
+              </div>
+            </li>
+            <li
+              data-type="video"
+              class="lectures"
+              data-note="note-3"
+              data-src="https://media.istockphoto.com/id/2156356225/vi/video/smart-designer-compare-color-palettes-with-laptop-and-design-product-symposium.mp4?s=mp4-640x640-is&amp;k=20&amp;c=gpAROr2Osk0lp4gA_bda3S1-OjhLUO1RhE91FnVbWUI="
+            >
+              <div class="list-item">
+                <div class="checkk">
+                  <i class="fa-regular fa-square-check"></i>
+                </div>
+                <div class="list-item-content">
+                  <div class="normal-text">
+                    3. Understand Available DM Channels - Part 2
+                  </div>
+                  <div class="small-text">11min</div>
+                </div>
+              </div>
+            </li>
+            <li
+              data-type="lecture"
+              data-src="lecture-2"
+              class="lectures"
+              data-note="note-4"
+            >
+              <div class="list-item">
+                <div class="checkk">
+                  <i class="fa-regular fa-square-check"></i>
+                </div>
+                <div class="list-item-content">
+                  <div class="normal-text">
+                    4. Understand Available DM Channels Tools - Part 1
+                  </div>
+                  <div class="small-text">4min</div>
+                </div>
+              </div>
+            </li>
+            <li
+              data-type="video"
+              class="lectures"
+              data-note="note-5"
+              data-src="https://media.istockphoto.com/id/1945077529/vi/video/qu%E1%BA%A3ng-c%C3%A1o-c%C3%B4ng-c%E1%BB%A5-t%C3%ACm-ki%E1%BA%BFm-qu%E1%BA%A3ng-c%C3%A1o-digitaldisplay-kinh-doanh-c%C3%B4ng-ngh%E1%BB%87tr%C3%AD-tu%E1%BB%87-nh%C3%A2n-t%E1%BA%A1o-c%C3%B4ng.mp4?s=mp4-640x640-is&amp;k=20&amp;c=1sRb5CGGJUeisQpf7ErvAxvpB_9VuUphWhNkZXR8kOM="
+            >
+              <div class="list-item">
+                <div class="checkk">
+                  <i class="fa-regular fa-square-check"></i>
+                </div>
+                <div class="list-item-content">
+                  <div class="normal-text">
+                    5. Understand Available DM Channels Tools - Part 2
+                  </div>
+                  <div class="small-text">15min</div>
+                </div>
+              </div>
+            </li>
+            <li
+              data-type="video"
+              class="lectures"
+              data-note="note-6"
+              data-src="https://cdn.pixabay.com/video/2019/03/21/22191-326722743_large.mp4"
+            >
+              <div class="list-item">
+                <div class="checkk">
+                  <i class="fa-regular fa-square-check"></i>
+                </div>
+                <div class="list-item-content">
+                  <div class="normal-text">
+                    6. Understand Available DM Channels - Output
+                  </div>
+                  <div class="small-text">10min</div>
+                </div>
+              </div>
+            </li>
+            <li
+              data-type="lecture"
+              data-src="lecture-3"
+              class="lectures"
+              data-note="note-7"
+            >
+              <div class="list-item">
+                <div class="checkk">
+                  <i class="fa-regular fa-square-check"></i>
+                </div>
+                <div class="list-item-content">
+                  <div class="normal-text">7. Evaluate DM Channels</div>
+                  <div class="small-text">10min</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <script src="noi-dung-khoa-hoc.js"></script>
+  </body>
+</html>

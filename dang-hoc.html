@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Learning</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dang-hoc.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My learning</h1>
+      <nav>
+        <a href="#" class="active">All courses</a>
+        <a href="#">Archived</a>
+      </nav>
+    </header>
+    <div class="dashboard-section">
+      <div class="streak-box">
+        <div class="streak-info">
+          <h2>Start a weekly streak</h2>
+          <p>One ring down! Now, watch your course(s).</p>
+          <p><strong>0 weeks</strong> Current streak</p>
+        </div>
+        <div class="streak-circle">
+          <div class="circle-graph"></div>
+          <div>
+            <p>4/30 course min</p>
+            <p>6/1 visit</p>
+            <p>Jun 1 - Jun 14</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="learning-schedule">
+        <h3>Schedule learning time</h3>
+        <p>
+          Learning a little each day adds up. Research shows that students who
+          make learning a habit are more likely to reach their goals.
+        </p>
+        <button>Get started</button>
+        <button>Dismiss</button>
+      </div>
+    </div>
+
+    <div class="filters">
+      <div>
+        <span>Sort by</span>
+        <select>
+          <option>Recently Accessed</option>
+        </select>
+      </div>
+      <div>
+        <span>Categories</span>
+        <select>
+          <option>All</option>
+        </select>
+      </div>
+      <div>
+        <span>Progress</span>
+        <select>
+          <option>All</option>
+        </select>
+      </div>
+      <div>
+        <span>Instructor</span>
+        <select>
+          <option>All</option>
+        </select>
+      </div>
+      <button>Reset</button>
+      <input type="search" placeholder="Search my courses" />
+    </div>
+
+    <section class="courses">
+      <div class="course-card relative">
+        <a href="noi-dung-khoa-hoc.html">
+          <img
+            src="https://img-c.udemycdn.com/course/240x135/709656_e2b1_3.jpg"
+            srcset="
+              https://img-c.udemycdn.com/course/240x135/709656_e2b1_3.jpg 240w,
+              https://img-c.udemycdn.com/course/480x270/709656_e2b1_3.jpg 480w,
+              https://img-c.udemycdn.com/course/750x422/709656_e2b1_3.jpg 750w
+            "
+            alt="Course Thumbnail"
+          />
+          <button class="ellipsis-button">⋮</button>
+          <div class="course-info">
+            <h3>Understand and Evaluate Digital Marketing Channels</h3>
+            <p>Ronny Hermosa, Diana Muñoz</p>
+            <div class="complete-text">0% complete</div>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
