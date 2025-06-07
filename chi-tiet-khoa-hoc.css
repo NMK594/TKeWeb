@@ -867,31 +867,3 @@ a{
     #purchase-section {
         padding: 1rem;
     } }
-        @media (max-width: 768px) {
-            .sidebar {
-                position: static !important;
-                margin: 2rem auto 0 auto !important;
-                width: 100%;
-                max-width: 100%;
-            }
-    
-            #sidebar-position {
-                order: 2;
-                /* Chuyển xuống dưới */
-                margin: 0 1rem;
-            }
-    
-            #page-body {
-                display: flex;
-                flex-direction: column;
-            }
-    
-            .video-intro {
-                display: block !important;
-            }
-    
-            .sidebar.sidebar-fixed {
-                position: static !important;
-                animation: none !important;
-                display: block !important;
-            }     }

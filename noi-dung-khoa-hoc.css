@@ -299,3 +299,78 @@ a h1{
     background-color: #ccc;
     color: #666;
     cursor: not-allowed; }
+        @media (max-width: 1024px) {
+            .content {
+                flex-direction: column;
+            }
+    
+            .course-content {
+                border-left: none;
+                border-top: 1px solid #ddd;
+                padding: 10px;
+                height: auto;
+                order: 2;
+            }
+    
+            .main-display {
+                order: 1;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+    
+            #lecture-header {
+                height: auto;
+                padding: 10px 0;
+            }
+    
+            .buttonn {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+    
+            #mainVideo {
+                max-height: 250px;
+            }
+    
+            #lectureText {
+                font-size: 14px;
+                padding: 15px;
+            }
+    
+            .tab {
+                padding: 5px 10px;
+            }
+    
+            .rating-popup-inner {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            #course-header h1 {
+                font-size: 1rem;
+            }
+    
+            .note h2 {
+                font-size: 1.1rem;
+            }
+    
+            .list-item-content .normal-text {
+                font-size: 14px;
+            }
+    
+            .list-item-content .small-text {
+                font-size: 12px;
+            }
+    
+            .rating-popup-inner {
+                padding: 0.5rem;
+            }     }
