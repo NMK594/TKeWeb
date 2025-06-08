@@ -18,8 +18,8 @@
 
   <header class="header">
         <div class="header-left">
-           <a href="/Trang chủ/trangchu.html">
-    <img src="/Trang chủ/images/Screenshot 2025-06-07 212313.png" alt="Logo">
+           <a href="/index.html">
+    <img src="/images/Screenshot 2025-06-07 212313.png" alt="Logo">
             <!--Explore dropdown-->
            <div class="mega-menu-container">
                 <a href="#" class="explore-link">Explore</a>
@@ -156,7 +156,7 @@
             <a href="/DangNhapDK/Dangky.html" class="btn btn-login guest-only">Log in</a>
             <a href="/DangNhapDK/Dangnhap1.html" class="btn btn-signup guest-only">Sign up</a>
             <div class="profile-wrapper user-only">
-                <div class="avatar">
+                <div class="avatar" tabindex="0">
                   <img src="https://i.pinimg.com/736x/10/f3/ea/10f3ea84eebd2c04b0513c96191cc34d.jpg" alt="User Avatar">
                 </div>
                 <div class="profile-box">
@@ -727,7 +727,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <script>
 function handleLogout() {
   localStorage.removeItem("isLoggedIn");
-  window.location.href = "/Trang chủ/trangchu.html"; // Reload lại trang chính với header cho khách
+  window.location.href = "/index.html"; // Reload lại trang chính với header cho khách
 }
 </script>
 </body>
